@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind pagina -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Hoja de estilos  -->
+    <link rel="stylesheet" href="./stylessRegistro2.css">
+    <title>Registro2</title>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container flex flex-wrap">
+
+        <!-- Barra de pasos -->
+        <div class="stepsBar mx-4 mt-7 w-full">
+            <!-- Rectangulo barra de pasos -->
+            <div class="stepsRectangle h-4 w-full mx-1"></div>
+            <!-- Circulos de barra de pasos -->
+            <div class="ContainerRounds w-full flex justify-between">
+                <div class="stepsRound" id="stepOne"></div>
+                <div class="stepsRound" id="stepTwo">2</div>
+                <div class="stepsRound" id="stepThree"></div>
+            </div>
+        </div>
+
+        <!-- Titulo principal -->
+        <div class="mainTitle w-full mt-4 mx-4">
+            <h1>¿A que te dedicas?</h1>
+        </div>
+
+        <!-- Titulo Ocupacion -->
+        <div class="secondaryTitle w-full mt-8 mx-8">
+            <h2>Ocupación</h2>
+        </div>
+        <!-- Input Ocupacion-->
+        <div class="form w-full h=12 mx-4">
+            <input class= "placeholder mx-4" type="text" placeholder="Menu desplegable con opciones de ocupación">
+        </div>
+
+        <!-- Titulo Nro RUT -->
+        <div class="secondaryTitle w-full mt-8 mx-8">
+            <h2>N° de RUT</h2>
+        </div>
+        <!-- Input Nro RUT -->
+        <div class="form w-full h=12 mx-4">
+            <input class= "placeholder mx-4" type="text" placeholder="Ingresar N° de RUT ...">
+        </div>
+
+        <!-- Titulo Numero BPS -->
+        <div class="secondaryTitle w-full mt-8 mx-8">
+            <h2>N° de Empresa BPS</h2>
+        </div>
+        <!-- Input Numero BPS -->
+        <div class="form w-full h=12 mx-4">
+            <input class= "placeholder mx-4" type="text" placeholder="Ingresar N° Empresa BPS...">
+        </div>
+
+        <!-- Titulo Covertura FONASA -->
+        <div class="secondaryTitle w-full mt-8 mx-8">
+            <h2>N° de Empresa BPS</h2>
+        </div>
+        <!-- Botones Covertura FONASA -->
+        <div class="w-full h=12 mx-4 flex">
+            <button class="buttonsYesNo w-2/4 mr-2">Si</button>
+            <button class="buttonsYesNo w-2/4 ml-2">No</button>
+        </div>
+
+        <!-- Boton siguiente paso -->
+        <div class="button w-full h=8 mt-10 mx-4"> 
+            <button>CON ESTO TERMINAMOS</button>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo w-full mt-6 justify-center">LOGO</div>
+    </div>
+</body>
+</html>

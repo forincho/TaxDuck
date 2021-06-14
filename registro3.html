@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind pagina -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Hoja de estilos  -->
+    <link rel="stylesheet" href="./stylessRegistro3.css">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Registro3</title>
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container flex flex-wrap">
+
+        <!-- Barra de pasos -->
+        <div class="stepsBar mx-4 mt-7 w-full">
+            <!-- Rectangulo barra de pasos -->
+            <div class="stepsRectangle h-4 w-full mx-1"></div>
+            <!-- Circulos de barra de pasos -->
+            <div class="ContainerRounds w-full flex justify-between">
+                <div class="stepsRound" id="stepOne"></div>
+                <div class="stepsRound" id="stepTwo"></div>
+                <div class="stepsRound" id="stepThree">3</div>
+            </div>
+        </div>
+
+        <!-- Titulo principal -->
+        <div class="mainTitle w-full mt-4 mx-4">
+            <h1>Ultimos datos</h1>
+        </div>
+
+        <!-- Titulo Aporte Fondo de Solidaridad / No aplica-->
+        <div class="secondaryTitle w-full mt-8 mx-8 flex">
+            <div class="w=2/4 mr-4">
+                <h2>Aporte a Fondo de Solidaridad</h2>
+            </div>
+            <div class="w=2/4 ml-4 flex gap-x-3">
+                <button class="noAplica w-5 h-5 ml-4"></button>
+                <div class="mr=4">
+                    <h2>No aplica</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Input Aporte Fondo de Solidaridad-->
+        <div class="form w-full h=12 mx-4">
+            <input class="placeholder mx-4" type="text" placeholder="Igual que profesiones">
+        </div>
+
+        <!-- Titulo Aporte a Caja de Profesionales / No aplica-->
+        <div class="secondaryTitle w-full mt-8 mx-8 flex">
+            <div class="w=2/4 mr-4">
+                <h2>Aporte a Caja de Profesionales</h2>
+            </div>
+            <div class="w=2/4 ml-4 flex gap-x-3">
+                <button class="noAplica w-5 h-5 ml-4"></button>
+                <div class="mr=4">
+                    <h2>No aplica</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Input Aporte a Caja de Profesionales -->
+        <div class="form w-full h=12 mx-4">
+            <input class="placeholder mx-4" type="text" placeholder="Igual que profesiones">
+        </div>
+
+        <!-- Titulo Personas a cargo -->
+        <div class="secondaryTitle w-full mt-8 mx-8 block flex">
+            <div class="w=2/4 mr-4">
+                <h2>Personas a cargo</h2>
+            </div>
+            <div class="w=2/4 ml-4 flex gap-x-3">
+                <button class="noAplica w-5 h-5 ml-4"></button>
+                <div class="mr=4">
+                    <h2>No aplica</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Input Numero Personas a cargo -->
+        <div class="w-full h=12 mx-4 flex justify-between mr-4">
+            <!-- <input class="form w-2/12 mr-2" type="text" placeholder="N°"></input>
+            <input class="form w-10/12 ml-2" type="text" placeholder="Igual que profesiones"></input> -->
+            <div class="form w-2/12 h=12">
+                <input class="placeholder mx-4" type="text" placeholder="N°">
+            </div>
+            <div class="form w-10/12 h=12 mx-4">
+                <input class="placeholder mx-4" type="text" placeholder="Igual que profesiones">
+            </div>
+        </div>
+
+        <!-- Boton agregar mas -->
+        <div class="buttonPlus w-full h=8 mt-10 mx-4 flex justify-center"> 
+            <button><i class="fal fa-plus"></i></button>
+        </div>
+
+        <!-- Boton siguiente paso -->
+        <div class="buttonNext w-full h=8 mt-10 mx-4"> 
+            <button>FINALIZAR</button>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo w-full mt-6 justify-center">LOGO</div>
+    </div>
+</body>
+</html>
