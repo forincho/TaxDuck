@@ -77,3 +77,18 @@
 .tituloslink{
     color: #C4C4C4;
 }
+header{
+    background-color: #14213D;
+    color: white;
+    font-weight: bold;
+}
+
+#LogoTitulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#A46CC4;
+}
+
+nav{
+    border: 1px solid #14213D;
+
+}
