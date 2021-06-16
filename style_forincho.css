@@ -88,7 +88,15 @@ header{
     color:#A46CC4;
 }
 
-nav{
-    border: 1px solid #14213D;
+.NavDesk{
+    border: 2px solid #14213D;
 
+}
+
+.NavOff{
+    border-top: 2px solid #14213D;
+    color: #14213D;
+}
+.NavOff:last-child{
+    border-bottom: 2px solid #14213D; 
 }
