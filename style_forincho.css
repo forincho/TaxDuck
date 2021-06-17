@@ -25,9 +25,6 @@
     color: #14213D;
 }
 
-.barralogin{
-    border: 1px solid black;
-}
 
 .pelota{
     background-color: #FCA311; 
@@ -62,7 +59,7 @@
 #containerMainDesk{
     display: grid;
     grid-template-columns: 16rem 1fr 1fr;
-    grid-template-rows: 5rem 5rem 2fr 1fr 2fr 1fr; 
+    grid-template-rows: 5rem 1fr 2fr 1fr 2fr 1fr; 
 }
 
 #headerDesk{
@@ -123,12 +120,11 @@ td{
 }
 
 #BAgregarIngreso{
-    border: 1px solid black;
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
 }
 
-#BBAgregarIngreso{
+.BBAgregar{
     background-color: #14213D;
     color: white;
     border-radius: 0.5rem;
@@ -138,4 +134,9 @@ td{
     color: #14213D;
     grid-column: 2 /span 1;
     grid-row: 5 / span 1;
+}
+
+#BAgregarGasto{
+    grid-column: 2 / span 1;
+    grid-row: 6 / span 1;
 }
