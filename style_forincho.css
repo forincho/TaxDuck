@@ -25,6 +25,10 @@
     color: #14213D;
 }
 
+.barralogin{
+    border: 1px solid black;
+}
+
 .pelota{
     background-color: #FCA311; 
 }
@@ -37,12 +41,7 @@
 }
 #marco_am{
     border: 1px solid #FCA311;
-    border-radius: 1rem;
-    margin-left: 23rem;
-    margin-right: 23rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 44rem;
+
 }
 
 .placeholder{
@@ -54,7 +53,6 @@
     border: 1px solid #14213D;
     background-color: #FCA311;
     color: #14213D;
-    border-radius: 1rem;
     }
 
 .tituloslink{
