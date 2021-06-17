@@ -50,54 +50,59 @@
 </div>
 
     <!-- Ingresos -->
-<div id="DivIngresos" class="mt-4 px-12">
+<div id="DivIngresos" class="pt-8 px-12">
     <div class=" flex justify-between font-bold text-2xl">
         <h2>Ingresos</h2>
         <h2>Total: $11,355.00</h2>
     </div>
         <!-- Tabla Ingresos -->
-    <table id="TablaIngresos">
-        <tr>
-            <th></th>
+    <table id="TablaIngresos" class="px-2 text-sm text-center w-full h-full shadow-lg">
+        <tr id="TitulosTabla" class="h-2">
+            <th><input type="checkbox"></th>
             <th>Nº</th>
             <th>Fecha</th>
             <th>Concepto</th>
             <th>Monto</th>
-            <th>Documento</th>  
+            <th>Documento</th>
         </tr>
         <tr>
-            <td>Icono</td>
+            <td><input type="checkbox"></td>
             <td>001</td>
             <td>12/06/2021</td>
             <td>Implement Traffic Coatings</td>
             <td>$1,892.00</td>
-            <td>IconoPDF</td>
+            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
         <tr>
-            <td>Icono</td>
+            <td><input type="checkbox"></td>
             <td>002</td>
             <td>15/06/2021</td>
             <td>Discharge Termite Control</td>
-            <td>3,255.00</td>
-            <td>IconoPDF</td>
+            <td>$3,255.00</td>
+            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
         <tr>
-            <td>Icono</td>
+            <td><input type="checkbox"></td>
             <td>003</td>
             <td>17/06/2021</td>
             <td>Quash Sheet Waterproofing</td>
-            <td>3,202.00</td>
-            <td>IconoPDF</td>
+            <td>$3,202.00</td>
+            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
         <tr>
-            <td>Icono</td>
+            <td><input type="checkbox"></td>
             <td>004</td>
             <td>20/06/2021</td>
             <td>Rectify Visual Display Systems</td>
-            <td>3,006.00</td>
-            <td>IconoPDF</td>
+            <td>$3,006.00</td>
+            <td class="text-red-500	"><i class="far fa-file-pdf"></i></td>
         </tr>
     </table>
+</div>
+
+<!-- Boton Agregar Ingreso -->
+<div id="BAgregarIngreso" class="flex justify-center items-center">
+    <button id="BBAgregarIngreso" class="w-96 h-12"><i class="fas fa-plus-circle"></i>Agregar Ingreso</button>
 </div>
 
 </div>
