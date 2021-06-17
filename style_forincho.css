@@ -127,13 +127,13 @@
     grid-row: 3 / span 1;
 }
 
-#TablaIngresos{
+#Tabla{
     border: 1px solid #14213D;
     border-radius: 1rem;
     padding-left: 1rem;
 }
 
-#TitulosTabla{
+.TitulosTabla{
     border-bottom: 1px solid #14213D;
 }
 
@@ -151,4 +151,10 @@ td{
     background-color: #14213D;
     color: white;
     border-radius: 0.5rem;
+}
+
+#DivGastos{
+    color: #14213D;
+    grid-column: 2 /span 1;
+    grid-row: 5 / span 1;
 }

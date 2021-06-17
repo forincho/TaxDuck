@@ -55,9 +55,10 @@
         <h2>Ingresos</h2>
         <h2>Total: $11,355.00</h2>
     </div>
-        <!-- Tabla Ingresos -->
-    <table id="TablaIngresos" class="px-2 text-sm text-center w-full h-full shadow-lg">
-        <tr id="TitulosTabla" class="h-2">
+
+    <!-- Tabla Ingresos -->
+    <table id="Tabla" class="px-2 text-sm text-center w-full h-full shadow-lg">
+        <tr class="TitulosTabla h-2">
             <th><input type="checkbox"></th>
             <th>Nº</th>
             <th>Fecha</th>
@@ -104,6 +105,59 @@
 <div id="BAgregarIngreso" class="flex justify-center items-center">
     <button id="BBAgregarIngreso" class="w-96 h-12"><i class="fas fa-plus-circle"></i>Agregar Ingreso</button>
 </div>
+
+<!-- Gastos -->
+<div id="DivGastos" class="pt-8 px-12">
+    <div class="flex justify-between font-bold text-2xl">
+        <h2>Gastos</h2>
+        <h2>Total: $10,649.00</h2>
+    </div>
+
+    <!-- Tabla Gastos -->
+    <table id="Tabla" class="px-2 text-sm text-center w-full h-full shadow-lg">
+        <tr class="TitulosTabla h-2">
+            <th><input type="checkbox"></th>
+            <th>Fecha</th>
+            <th>Concepto</th>
+            <th>Monto IVA</th>
+            <th>Estado</th>
+            <th>Documento</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>12/06/2021</td>
+            <td>Stage Collar & ECP</td>
+            <td>$7,508.00</td>
+            <td class="text-red-500">Rechazada</td>
+            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>15/06/2021</td>
+            <td>Wiper Plug</td>
+            <td>$7,210.00</td>
+            <td class="text-red-500">Rechazada</td>
+            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>17/06/2021</td>
+            <td>Drill Pipe Dart Test Sub</td>
+            <td>$8,552.00</td>
+            <td>Aprobada</td>    
+            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>20/06/2021</td>
+            <td>Tie Back Stem</td>
+            <td>$2,097.00</td>
+            <td>Pendiente</td>
+            <td class="text-red-500	"><i class="far fa-file-pdf"></i></td>
+        </tr>
+    </table>
+</div>
+
 
 </div>
 </body>
