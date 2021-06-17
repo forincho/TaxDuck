@@ -151,3 +151,19 @@ td{
     color: white;
     border-radius: 0.5rem;
 }
+
+#Calendario{
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 2;
+    border: 1px solid black;
+}
+
+#EstiloCalendario{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.mespasado{
+    color: #A46CC4;
+}
