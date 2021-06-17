@@ -7,36 +7,85 @@
     <!-- Tailwind pagina -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!-- Hoja de estilos  -->
-    <link rel="stylesheet" href="./stylessRegistro3.css">
+    <link rel="stylesheet" href="./styless.css">
     <!-- Font awsome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Ingreso Facturas</title>
 </head>
 <body>
     <div class="container flex flex-wrap">
-        <header class="header w-full h-14 flex">
-            <div class="burgerMenu w-4 h-3 ml-5 my-6">
-                <i class="fas fa-bars"></i>
+        <header class="header w-full h-14 flex items-center justify-between">
+            <div class="flex">
+                <div class="w-6 h-6 ml-5 my-6">
+                    <i class="burgerMenu fas fa-bars"></i>
+                </div>
+                <div class="logoHeader w-6 h-8 ml-5 my-6">
+                    <img src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la app">
+                </div>
             </div>
-            <div class="logoHeader w-6 h-8 ml-5 my-6">
-                <img src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la app">
+            <div class="flex">
+                <i class="headerTitle fas fa-plus-circle w-1/5 mr-1.5"></i>
+                <div class="headerTitle w-4/5">
+                    INGRESO
+                </div>
             </div>
-            <div class="plusRound">
-                +
-            </div>
-            <div class="headerTitle">
-                INGRESO
-            </div>
-            <div class="pointsMenu">
+            <div class="pointsMenu mr-5"> 
                 <i class="fas fa-ellipsis-v"></i>
             </div>
         </header>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+        <div class="findFile w-full mx-4 mt-4 h-24">Icono y buscar file</div>
+        <div class="formIng w-full mx-4 mt-4 h-14">
+            <!-- Titulo N° de Factura-->
+            <div class="secondaryTitle w-full mx-2">
+                <h2>N° de Factura</h2>
+            </div>
+            <!-- Input N° de Factura -->
+            <div class="form w-full h-8">
+                <input class= "placeholder mx-4" type="text" placeholder="N° de factura...">
+            </div>
+        </div>
+
+        <div class="formIng w-full mx-4 mt-4 h-14">
+            <!-- Titulo Fecha-->
+            <div class="secondaryTitle w-full mx-2">
+                <h2>Fecha</h2>
+            </div>
+            <!-- Input Nombre -->
+            <div class="form w-full h-8">
+                <input class= "placeholder mx-4" type="date" placeholder="N° de factura...">
+            </div>
+        </div>
+
+        <div class="formIng w-full mx-4 mt-4 h-14">
+            <!-- Titulo Concepto-->
+            <div class="secondaryTitle w-full mx-2">
+                <h2>Concepto</h2>
+            </div>
+            <!-- Input Concepto-->
+            <div class="form w-full h-8">
+                <input class= "placeholder mx-4" type="text" placeholder="Concepto...">
+            </div>
+        </div>
+        
+        <div class="formIng w-full mx-4 mt-4 h-14">
+            <!-- Titulo Monto Total-->
+            <div class="secondaryTitle w-full mx-2">
+                <h2>Monto Total</h2>
+            </div>
+            <!-- Input Monto Total-->
+            <div class="form w-full h-8">
+                <input class= "placeholder mx-4" type="text" placeholder="Monto Total...">
+            </div>
+        </div>
+
+        <div>
+        <!-- Botones Covertura FONASA -->
+            <div class="w-full h=12 mx-4 mt-2 flex justify-center">
+                <button class="buttonsYesNo w-1/2 mr-2">Pesos</button>
+                <button class="buttonsYesNo w-1/2 ml-2">Dólares</button>
+             </div>
+        </div>
         <div></div>
         <div></div>
         <div></div>
