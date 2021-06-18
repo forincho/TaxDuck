@@ -13,28 +13,62 @@
     <title>Ingreso Facturas</title>
 </head>
 <body>
-    <div class="container flex flex-wrap">
+    <div class="container mx-auto flex flex-wrap">
 
         <!-- Barra Header -->
-        <header class="header w-full h-14 flex items-center justify-between">
-            <!-- Menu hamburguesa y Logo -->
-            <div class="w-1/5 flex justify-start">
-                <div class="w-6 h-6 ml-5 my-6">
+        <header class="header w-full h-14 flex items-center justify-between   sm:h-20 gap-x-5">
+            
+            <div class="w-1/5 flex justify-start items-center   sm:w-4/12">
+                <!-- Menu hamburguesa-->
+                <div class="w-6 h-6 ml-5   sm:hidden">
                     <i class="burgerMenu fas fa-bars"></i>
                 </div>
-                <div class="logoHeader w-6 h-8 ml-5 my-6">
+
+                <!-- Logo -->
+                <div class="logoHeader w-6 h-1/2   sm:w-12 h-16 ml-4">
                     <img src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la app">
                 </div>
+
+                <!-- Titulo Logo -->
+                <div class="taxDuck hidden   sm:flex w-2/5 h-4/5 m-3.5 flex-wrapp items-center">
+                    <div class="taxDuckLetters w-full h-6 mt-auto flex items-center">TaxDuck</div>
+                    <!-- Ver como hacer no me queda el bloque amarillo -->
+                    <!-- <div class="taxDuckSubline w-full h-4 mt-3.5 items-end"></div> -->
+                </div>
             </div>
+
             <!-- Icono y Titulo -->
-            <div class="w-1/5 flex justify-center gap-x-1">
+            <div class="w-1/5 flex justify-center gap-x-1   sm:hidden">
                 <i class="headerTitle fas fa-plus-circle justify-end"></i>
                 <div class="headerTitle justify-start">
                     INGRESO
                 </div>
             </div>
+
+            <!-- Barra de navegacion header (tablet) -->
+            <div class="hidden   sm:flex w-7/12 justify-end gap-x-3">
+                <div class="headerNavItem  sm:flex justify-center items-center gap-x-1">
+                    <i class="headerNavItem fas fa-plus-circle justify-end "></i>
+                    <div class="headerNavItem justify-start">
+                        Ingresos
+                    </div>
+                </div>
+                <div class="headerNavItem   sm:flex justify-center items-center gap-x-1">
+                    <i class="headerNavItem fas fa-plus-circle justify-end "></i>
+                    <div class="headerNavItem justify-start">
+                        Gastos
+                    </div>
+                </div>
+                <div class="headerNavItem justify-center">
+                    Estimado
+                </div>
+                <div class="headerNavItem justify-center">
+                    Proyecciones
+                </div>
+            </div>
+
             <!-- Menu elipsis -->
-            <div class="w-1/5 pointsMenu mr-7 flex justify-end"> 
+            <div class="pointsMenu w-1/5 mr-7 flex justify-end   sm:w-1/12"> 
                 <i class="fas fa-ellipsis-v"></i>
             </div>
         </header>

@@ -10,6 +10,10 @@ html{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.container {
+    min-width: 425px;
+}
+
 /* Marco amarillo */
 #marco_am {
     border: 1px solid #FCA311;
@@ -151,7 +155,6 @@ h2 {
 .headerTitle {
     color: #FCA311;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -194,4 +197,16 @@ h2 {
 
 .uploadIcon {
     font-size: 2rem;
+}
+
+/* cambiar a rubik el font */
+.taxDuckLetters {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #A46CC4;
+}
+
+.taxDuckSubline {
+    background-color: #FCA311;
 }
