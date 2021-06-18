@@ -19,23 +19,23 @@
 <body>
     
     <!-- Contenedor -->
-<div id="containerMainDesk">
+<div id="containerMainDesk" class="justify-items-center">
 
     <!-- Header -->
-<header id="headerDesk" class="font-bold flex items-center justify-between">
+<header id="headerDesk" class="font-bold flex items-center justify-between w-full">
     <button>
         <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
     </button>
     <div class="inline-flex mr-8 mt- flex w-4/12 justify-between items-center">
-    <button class="font-bold">INGRESOS</button>
-    <button class="font-bold">GASTOS</button>
-    <button class="font-bold">COMPROBANTES</button>
-    <button><i class="fas fa-ellipsis-v"></i></button>
+        <button class="font-bold">INGRESOS</button>
+        <button class="font-bold">GASTOS</button>
+        <button class="font-bold">COMPROBANTES</button>
+        <button><i class="fas fa-ellipsis-v"></i></button>
     </div>  
 </header>
 
     <!-- Navigation Desktop -->
-<nav id="NavDesk" class="text-center h-screen flex justify-center">
+<nav id="NavDesk" class="text-center h-screen flex justify-center w-full h-full">
     <ul class="w-full">
         <button class="flex justify-center w-full">
             <img class="h-32 mt-4 mb-8" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
@@ -59,20 +59,21 @@
 </nav>
 
     <!-- Titulo Mes -->
-<div  id="TituloMes" class="mt-4 flex justify-center items-center">
+<div  id="TituloMes" class="my-8 flex justify-center items-center">
     <h1 class="font-bold text-4xl">JUNIO 2021</h1>
 </div>
 
     <!-- Ingresos -->
-<div id="DivIngresos" class="py-8 px-12">
+<div id="DivIngresos" class="mt-8 w-10/12 h-4/5">
     <div class="flex justify-between font-bold text-2xl">
         <h2>Ingresos</h2>
         <h2>Total: $11,355.00</h2>
     </div>
 
     <!-- Tabla Ingresos -->
-    <table id="Tabla" class="px-2 text-sm text-center w-full h-full shadow-lg">
-        <tr class="TitulosTabla h-2">
+    <!-- arreglar margen izquierdo y bordes -->
+    <table id="Tabla" class="text-sm text-center w-full h-auto shadow-lg">
+        <tr class="TitulosTabla mt-4 h-6">
             <th><input type="checkbox"></th>
             <th>Nº</th>
             <th>Fecha</th>
@@ -80,7 +81,7 @@
             <th>Monto</th>
             <th>Documento</th>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>001</td>
             <td>12/06/2021</td>
@@ -88,7 +89,7 @@
             <td>$1,892.00</td>
             <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>002</td>
             <td>15/06/2021</td>
@@ -96,7 +97,7 @@
             <td>$3,255.00</td>
             <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>003</td>
             <td>17/06/2021</td>
@@ -104,7 +105,7 @@
             <td>$3,202.00</td>
             <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>004</td>
             <td>20/06/2021</td>
@@ -116,20 +117,20 @@
 </div>
 
 <!-- Boton Agregar Ingreso -->
-<div id="BAgregarIngreso" class="flex justify-center items-center">
-    <button class="BBAgregar w-96 h-12"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
+<div id="BAgregarIngreso" class="-mt-4 flex justify-center items-center w-3/5 h-1/2">
+    <button class="BBAgregar w-full h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
 </div>
 
-<!-- Gastos -->
-<div id="DivGastos" class="pb-16 px-12">
+    <!--Div Gastos -->
+    <div id="DivGastos" class="-mt-20 w-10/12 h-4/5">
     <div class="flex justify-between font-bold text-2xl">
         <h2>Gastos</h2>
         <h2>Total: $10,649.00</h2>
     </div>
 
     <!-- Tabla Gastos -->
-    <table id="Tabla" class="px-2 text-sm text-center w-full h-full shadow-lg">
-        <tr class="TitulosTabla h-2">
+    <table id="Tabla" class="text-sm text-center w-full h-auto shadow-lg">
+        <tr class="TitulosTabla mt-4 h-6">
             <th><input type="checkbox"></th>
             <th>Fecha</th>
             <th>Concepto</th>
@@ -137,7 +138,7 @@
             <th>Estado</th>
             <th>Documento</th>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>12/06/2021</td>
             <td>Stage Collar & ECP</td>
@@ -145,7 +146,7 @@
             <td class="text-red-500">Rechazada</td>
             <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>15/06/2021</td>
             <td>Wiper Plug</td>
@@ -153,7 +154,7 @@
             <td class="text-red-500">Rechazada</td>
             <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>17/06/2021</td>
             <td>Drill Pipe Dart Test Sub</td>
@@ -161,7 +162,7 @@
             <td>Aprobada</td>    
             <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
         </tr>
-        <tr>
+        <tr class="h-10">
             <td><input type="checkbox"></td>
             <td>20/06/2021</td>
             <td>Tie Back Stem</td>
@@ -174,8 +175,8 @@
 </div>
 
     <!-- Boton Agregar Gasto -->
-    <div id="BAgregarGasto" class="flex justify-center items-start">
-        <button class="BBAgregar w-96 h-12"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
+    <div id="BAgregarGasto" class="-mt-32 flex justify-center items-center w-3/5 h-1/2">
+        <button class="BBAgregar w-full h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
     </div>
 
     <!-- Boton Calcular Estimado -->
@@ -183,9 +184,13 @@
         <button class="BEstimado w-96 h-16 font-bold">CALCULAR ESTIMADO</button>
     </div>
 
-    <div id="Calendario" class="mx-16 mb-36 -mt-10 mx-28 flex justify-center flex-wrap shadow-xl">
-        <h1 class="TituloCalendario text-xl text-center font-bold h-8 w-auto mx-8 mt-4">Calendario de Vencimientos</h1>
-        <h2 class="TituloCalendario text-base text-center w-auto border-b-0 font-bold mx-32">< Julio de 2021 ></h2>
+    <!-- Calendario -->
+    <div id="Calendario" class="w-6/12 mb-36 -mt-10 flex justify-items-center justify-center flex-wrap shadow-xl">
+        <h1 class="TituloCalendario text-center font-bold h-8 w-full mx-8 mt-4">Calendario de Vencimientos</h1>
+        <h2 class="TituloCalendario text-center w-full border-b-0 font-bold mx-32">
+            <button class="font-bold mr-2"><</button>
+            Julio de 2021
+            <button class="font-bold ml-2">></button></h2>
         <ol id="EstiloCalendario" class="w-full">
             <li class="font-bold text-center">D</li>
             <li class="font-bold text-center">L</li>
@@ -231,6 +236,8 @@
             <li class="text-center">31</li>
         </ol>
     </div>
+
+    <!-- Leyendas -->
     <div id="Leyenda" class="flex justify-center items-center flex-wrap pb-8 mx-36 mt-24">
         <div class="TituloLeyenda w-7/12 flex justify-between items-center"><span class="VencimientoDGI h-8 w-8"></span><h4 class="inline font-bold">Vencimiento DGI</h4></div>
         <div class="TituloLeyenda w-7/12 flex justify-between items-center"><span class="VencimientoFONASA h-8 w-8"></span><h4 class="inline font-bold">Vencimiento DGI</h4></div>

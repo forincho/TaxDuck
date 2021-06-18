@@ -59,7 +59,7 @@
 #containerMainDesk{
     display: grid;
     grid-template-columns: 16rem 1fr 1fr;
-    grid-template-rows: 4rem 3rem 2fr 1fr 2fr 1fr; 
+    grid-template-rows: 4rem 2rem 2fr 1fr 2fr 1fr; 
 }
 
 #headerDesk{
@@ -107,8 +107,6 @@
 
 #Tabla{
     border: 1px solid #14213D;
-    border-radius: 1rem;
-    padding-left: 1rem;
 }
 
 .TitulosTabla{
@@ -122,6 +120,7 @@ td{
 #BAgregarIngreso{
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
+
 }
 
 .BBAgregar{
@@ -134,11 +133,13 @@ td{
     color: #14213D;
     grid-column: 2 /span 1;
     grid-row: 5 / span 1;
+
 }
 
 #BAgregarGasto{
     grid-column: 2 / span 1;
     grid-row: 6 / span 1;
+
 }
 
 #BCalcularEstimado{
