@@ -59,7 +59,7 @@
 #containerMainDesk{
     display: grid;
     grid-template-columns: 16rem 1fr 1fr;
-    grid-template-rows: 5rem 3rem 2fr 1fr 2fr 1fr; 
+    grid-template-rows: 4rem 3rem 2fr 1fr 2fr 1fr; 
 }
 
 #headerDesk{
@@ -155,7 +155,9 @@ td{
 #Calendario{
     grid-column: 3 / span 1;
     grid-row: 4 / span 2;
-    border: 1px solid black;
+    border-left: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
 }
 
 #EstiloCalendario{
@@ -164,6 +166,30 @@ td{
     grid-template-columns: repeat(7, 1fr);
 }
 
+.TituloCalendario{
+    color: #14213D;
+    border-bottom: 1px solid #14213D;
+}
+
 .mespasado{
-    color: #A46CC4;
+    color: #C4C4C4;
+}
+
+.VencimientoDGI{
+    background-color: #FCA311;
+    border: 1px solid #14213D;
+}
+
+.VencimientoFONASA{
+    background-color: #A46CC4;
+    border: 1px solid #14213D;
+}
+
+#Leyenda{
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 1;
+}
+
+.TituloLeyenda{
+    color: #14213D;
 }

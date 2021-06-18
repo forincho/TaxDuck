@@ -23,24 +23,38 @@
 
     <!-- Header -->
 <header id="headerDesk" class="font-bold flex items-center justify-between">
-    <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
+    <button>
+        <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
+    </button>
     <div class="inline-flex mr-8 mt- flex w-96 justify-between items-center">
-    <span>INGRESOS</span>
-    <span>GASTOS</span>
-    <span>COMPROBANTES</span>
-    <i class="fas fa-ellipsis-v"></i>
+    <button class="font-bold">INGRESOS</button>
+    <button class="font-bold">GASTOS</button>
+    <button class="font-bold">COMPROBANTES</button>
+    <button><i class="fas fa-ellipsis-v"></i></button>
     </div>  
 </header>
 
     <!-- Navigation Desktop -->
 <nav id="NavDesk" class="text-center h-screen flex justify-center">
     <ul class="w-full">
-        <img class="h-32 mt-4 mb-8 ml-20" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
-        <li class="NavOn shadow-md flex items-center justify-center font-bold text-xl h-14">HOME</li>
-        <li class="NavOff flex items-center justify-center font-bold text-xl h-14">AGREGAR INGRESO</li>
-        <li class="NavOff flex items-center justify-center font-bold text-xl h-14">AGREGAR GASTO</li>
-        <li class="NavOff flex items-center justify-center font-bold text-xl h-14">CALCULAR ESTIMADO</li>
-        <li class="NavOff flex items-center justify-center font-bold text-xl h-14">PROYECCIONES</li>
+        <button class="flex justify-center w-full">
+            <img class="h-32 mt-4 mb-8" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
+        </button>    
+        <li class="NavOn shadow-md flex items-center justify-center font-bold text-xl h-14">
+            <button class="w-full h-full">HOME</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-xl h-14">
+            <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-xl h-14">
+            <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-xl h-14">
+           <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-xl h-14">
+           <button class="font-bold w-full h-full">PROYECCIONES</button>
+        </li>
     </ul>
 </nav>
 
@@ -168,11 +182,11 @@
     <div id="BCalcularEstimado" class="flex justify-center items-center">
         <button class="BEstimado w-96 h-16 font-bold">CALCULAR ESTIMADO</button>
     </div>
-    
-    <div id="Calendario">
-        <h1 id="TituloCalendario">Calendario de Vencimientos</h1>
-        <h2 id="SubTitCalendario">< Julio de 2021 ></h2>
-        <ol id="EstiloCalendario">
+
+    <div id="Calendario" class="mx-16 mb-36 -mt-10 mx-28 flex justify-center flex-wrap shadow-xl">
+        <h1 class="TituloCalendario text-xl text-center font-bold h-8 w-auto mx-8 mt-4">Calendario de Vencimientos</h1>
+        <h2 class="TituloCalendario text-base text-center w-auto border-b-0 font-bold mx-32">< Julio de 2021 ></h2>
+        <ol id="EstiloCalendario" class="w-full">
             <li class="font-bold text-center">D</li>
             <li class="font-bold text-center">L</li>
             <li class="font-bold text-center">M</li>
@@ -180,41 +194,46 @@
             <li class="font-bold text-center">J</li>
             <li class="font-bold text-center">V</li>
             <li class="font-bold text-center">S</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
-            <li>25</li>
-            <li>26</li>
-            <li>27</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-            <li>31</li>
+            <li class="mespasado text-center">27</li>
+            <li class="mespasado text-center">28</li>
+            <li class="mespasado text-center">29</li>
+            <li class="mespasado text-center">30</li>
+            <li class="text-center">1</li>
+            <li class="text-center">2</li>
+            <li class="text-center">3</li>
+            <li class="text-center">4</li>
+            <li class="text-center">5</li>
+            <li class="text-center">6</li>
+            <li class="text-center">7</li>
+            <li class="text-center">8</li>
+            <li class="text-center">9</li>
+            <li class="text-center">10</li>
+            <li class="text-center">11</li>
+            <li class="text-center">12</li>
+            <li class="text-center">13</li>
+            <li class="text-center">14</li>
+            <li class="VencimientoDGI text-center font-bold mx-4">15</li>
+            <li class="text-center">16</li>
+            <li class="text-center">17</li>
+            <li class="text-center">18</li>
+            <li class="text-center">19</li>
+            <li class="text-center">20</li>
+            <li class="text-center">21</li>
+            <li class="text-center">22</li>
+            <li class="VencimientoFONASA text-center font-bold mx-4">23</li>
+            <li class="text-center">24</li>
+            <li class="text-center">25</li>
+            <li class="text-center">26</li>
+            <li class="text-center">27</li>
+            <li class="text-center">28</li>
+            <li class="text-center">29</li>
+            <li class="text-center">30</li>
+            <li class="text-center">31</li>
         </ol>
+    </div>
+    <div id="Leyenda" class="flex justify-center items-center flex-wrap pb-8 mx-36 mt-24">
+        <div class="TituloLeyenda w-7/12 flex justify-between items-center"><span class="VencimientoDGI h-8 w-8"></span><h4 class="inline font-bold">Vencimiento DGI</h4></div>
+        <div class="TituloLeyenda w-7/12 flex justify-between items-center"><span class="VencimientoFONASA h-8 w-8"></span><h4 class="inline font-bold">Vencimiento DGI</h4></div>
     </div>
 
 </div>
