@@ -14,8 +14,11 @@
 </head>
 <body>
     <div class="container flex flex-wrap">
+
+        <!-- Barra Header -->
         <header class="header w-full h-14 flex items-center justify-between">
-            <div class="flex">
+            <!-- Menu hamburguesa y Logo -->
+            <div class="w-1/5 flex justify-start">
                 <div class="w-6 h-6 ml-5 my-6">
                     <i class="burgerMenu fas fa-bars"></i>
                 </div>
@@ -23,18 +26,27 @@
                     <img src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la app">
                 </div>
             </div>
-            <div class="flex">
-                <i class="headerTitle fas fa-plus-circle w-1/5 mr-1.5"></i>
-                <div class="headerTitle w-4/5">
+            <!-- Icono y Titulo -->
+            <div class="w-1/5 flex justify-center gap-x-1">
+                <i class="headerTitle fas fa-plus-circle justify-end"></i>
+                <div class="headerTitle justify-start">
                     INGRESO
                 </div>
             </div>
-            <div class="pointsMenu mr-5"> 
+            <!-- Menu elipsis -->
+            <div class="w-1/5 pointsMenu mr-7 flex justify-end"> 
                 <i class="fas fa-ellipsis-v"></i>
             </div>
         </header>
 
-        <div class="findFile w-full mx-4 mt-4 h-24">Icono y buscar file</div>
+        <!-- Modulo subir facturas -->
+        <div class="findFile w-full mx-4 mt-4 h-24 flex flex-wrap justify-center items-center">
+            <button> 
+                <i class="uploadIcon fas fa-upload mb-2"></i>
+                <div class="buttonUploadFile">Buscar un archivo</div>
+            </button>
+        </div>
+        
         <div class="formIng w-full mx-4 mt-4 h-14">
             <!-- Titulo N° de Factura-->
             <div class="secondaryTitle w-full mx-2">
@@ -68,7 +80,7 @@
             </div>
         </div>
         
-        <div class="formIng w-full mx-4 mt-4 h-14">
+        <div class="formIng w-full mx-4 mt-4 h-24">
             <!-- Titulo Monto Total-->
             <div class="secondaryTitle w-full mx-2">
                 <h2>Monto Total</h2>
@@ -77,19 +89,34 @@
             <div class="form w-full h-8">
                 <input class= "placeholder mx-4" type="text" placeholder="Monto Total...">
             </div>
-        </div>
-
-        <div>
-        <!-- Botones Covertura FONASA -->
-            <div class="w-full h=12 mx-4 mt-2 flex justify-center">
+            <!-- Botones de moneda -->
+            <div class="w-full h=12 mt-2 flex justify-center">
                 <button class="buttonsYesNo w-1/2 mr-2">Pesos</button>
                 <button class="buttonsYesNo w-1/2 ml-2">Dólares</button>
-             </div>
+            </div>  
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+
+        <div class="formIng w-full mx-4 mt-4 h-14">
+            <!-- Titulo Retención de IRPF-->
+            <div class="secondaryTitle w-full mx-2">
+                <h2>Retención de IRPF</h2>
+            </div>
+            <!-- Botones Retención de IRPF-->
+            <div class="w-full h=12 flex justify-center">
+                <button class="buttonsYesNo w-1/2 mr-2">No</button>
+                <button class="buttonsYesNo w-1/2 ml-2">Si</button>
+            </div>  
+        </div>
+
+        <!-- Boton Cancelar -->
+        <div class="buttonCancel w-full h=8 mt-5 mx-4"> 
+            <button>CANCELAR</button>
+        </div>
+
+        <!-- Boton Aceptar -->
+        <div class="buttonAccept w-full h=8 mt-5 mx-4"> 
+            <button>ACEPTAR</button>
+        </div>
     </div>
 </body>
 </html>
