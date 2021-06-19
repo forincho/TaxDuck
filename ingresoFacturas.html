@@ -20,25 +20,25 @@
             
             <div class="w-2/6 flex justify-start items-center   sm:w-4/12">
                 <!-- Menu hamburguesa-->
-                <div class="w-6 h-6 ml-5   sm:hidden">
+                <button class="w-6 h-6 ml-5   sm:hidden">
                     <i class="burgerMenu fas fa-bars"></i>
-                </div>
+                </button>
 
                 <!-- Logo -->
-                <div class="logoHeader w-6 h-1/2   sm:w-12 h-16 ml-4">
+                <div class="logoHeader w-6 h-3/5   sm:w-12 h-4/5 ml-4">
                     <img src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la app">
                 </div>
 
                 <!-- Titulo Logo -->
-                <div class="taxDuck hidden   sm:flex w-2/5 h-4/5 m-3.5 flex-wrapp items-center">
-                    <div class="taxDuckLetters w-full h-6 mt-auto flex items-center">TaxDuck</div>
+                <div class="taxDuck hidden   sm:flex w-2/5 h-full mx-3.5 self-end flex-col justify-between">
+                    <div class="taxDuckLetters w-24 h-1/2 mb-1.5">TaxDuck</div>
                     <!-- Ver como hacer no me queda el bloque amarillo -->
-                    <!-- <div class="taxDuckSubline w-full h-4 mt-3.5 items-end"></div> -->
+                    <div class="taxDuckSubline w-24 h-4"></div>
                 </div>
             </div>
 
             <!-- Icono y Titulo -->
-            <div class="w-2/6 flex justify-center gap-x-1   sm:hidden">
+            <div class="w-2/6 h-1/2 flex justify-center gap-x-1   sm:hidden">
                 <i class="headerTitle fas fa-plus-circle justify-end"></i>
                 <div class="headerTitle justify-start">
                     INGRESO
@@ -46,30 +46,30 @@
             </div>
 
             <!-- Barra de menu header (tablet) -->
-            <div class="hidden   sm:flex w-7/12 justify-end gap-x-3">
-                <div class="headerNavItem  sm:flex justify-center items-center gap-x-1">
+            <div class="hidden   sm:flex w-7/12 h-1/4 justify-end gap-x-3">
+                <button class="headerNavItem  sm:flex justify-center items-center gap-x-1">
                     <i class="headerNavItem fas fa-plus-circle justify-end "></i>
                     <div class="headerNavItem justify-start">
                         Ingresos
                     </div>
-                </div>
-                <div class="headerNavItem   sm:flex justify-center items-center gap-x-1">
+                </button>
+                <button class="headerNavItem   sm:flex justify-center items-center gap-x-1">
                     <i class="headerNavItem fas fa-plus-circle justify-end "></i>
                     <div class="headerNavItem justify-start">
                         Gastos
                     </div>
-                </div>
-                <div class="headerNavItem justify-center">
+                </button>
+                <button class="headerNavItem justify-center">
                     Estimado
-                </div>
-                <div class="headerNavItem justify-center">
+                </button>
+                <button class="headerNavItem justify-center">
                     Proyecciones
-                </div>
+                </button>
             </div>
 
             <!-- Menu elipsis -->
             <div class="pointsMenu w-2/6 mr-7 flex justify-end   sm:w-1/12"> 
-                <i class="fas fa-ellipsis-v"></i>
+                <button class="w-1/4"><i class="fas fa-ellipsis-v"></i></button>
             </div>
         </header>
 
@@ -84,8 +84,8 @@
         </div>
         
         <!-- Modulo formularios -->
-        <div class="w-11/12 mx-auto flex flex-wrap justify-between sm:w-10/12">
-            <div class="formIng w-full mt-4 h-14   sm:w-5/12 mr-auto order-1">
+        <div class="w-11/12 mx-auto flex flex-wrap justify-between   sm:w-10/12">
+            <div class="formIng w-full mt-4 h-2/12   sm:w-5/12 mr-auto order-1">
                 <!-- Titulo N° de Factura-->
                 <div class="secondaryTitle w-full mx-2">
                     <h2>N° de Factura</h2>
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="formIng w-full mt-4 h-14   sm:w-5/12 ml-auto order-2">
+            <div class="formIng w-full mt-4 h-2/12   sm:w-5/12 ml-auto order-2">
                 <!-- Titulo Fecha-->
                 <div class="secondaryTitle w-full mx-2">
                     <h2>Fecha</h2>
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="formIng w-full mt-4 h-14   sm:w-5/12 mr-auto order-3">
+            <div class="formIng w-full mt-4 h-2/12    sm:w-5/12 mr-auto order-3">
                 <!-- Titulo Concepto-->
                 <div class="secondaryTitle w-full mx-2">
                     <h2>Concepto</h2>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             
-            <div class="formIng w-full mt-4 h-14   sm:w-5/12 mr-auto order-5">
+            <div class="formIng w-full mt-4 h-2/12    sm:w-5/12 mr-auto order-5">
                 <!-- Titulo Monto Total-->
                 <div class="secondaryTitle w-full mx-2">
                     <h2>Monto Total</h2>
@@ -130,7 +130,7 @@
             </div>
 
             <!-- Botones de moneda -->
-            <div class="formIng w-full h-7 mt-2   sm:w-5/12 h-14 mt-4 order-4">
+            <div class="formIng w-full h-1/12   sm:w-5/12 h-2/12 mt-4 order-4">
                 <!-- Titulo Moneda-->
                 <div class="secondaryTitle hidden   sm:flex w-full mx-2">
                     <h2>Moneda</h2>
@@ -141,7 +141,7 @@
                 </div> 
             </div>    
 
-            <div class="formIng w-full h-14 sm:w-5/12 mt-4 order-6">
+            <div class="formIng w-full h-2/12 sm:w-5/12 mt-4 order-6">
                 <!-- Titulo Retención de IRPF-->
                 <div class="secondaryTitle w-full mx-2">
                     <h2>Retención de IRPF</h2>

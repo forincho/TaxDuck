@@ -204,9 +204,12 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    text-align: center;
     color: #A46CC4;
 }
 
 .taxDuckSubline {
     background-color: #FCA311;
+    border: 1px solid #FCA311;
+    margin-bottom: -0.450rem;
 }
