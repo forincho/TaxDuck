@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0%;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -106,7 +106,9 @@
 }
 
 #Tabla{
-    border: 1px solid #14213D;
+    border: 2px solid #14213D;
+    border-radius: .5rem;
+    overflow-y: scroll;
 }
 
 .TitulosTabla{
@@ -146,7 +148,6 @@ td{
 #BCalcularEstimado{
     grid-column: 3 / span 1;
     grid-row:2 / span 2;
-    border: 1px solid black;
 }
 
 .BEstimado{
@@ -158,9 +159,6 @@ td{
 #Calendario{
     grid-column: 3 / span 1;
     grid-row: 4 / span 2;
-    border-left: 1px solid #C4C4C4;
-    border-right: 1px solid #C4C4C4;
-    border-bottom: 1px solid #C4C4C4;
 }
 
 #EstiloCalendario{
@@ -171,7 +169,6 @@ td{
 
 .TituloCalendario{
     color: #14213D;
-    border-bottom: 1px solid #14213D;
 }
 
 .mespasado{
@@ -191,8 +188,18 @@ td{
 #Leyenda{
     grid-column: 3 / span 1;
     grid-row: 5 / span 1;
+
 }
 
 .TituloLeyenda{
     color: #14213D;
+
 }
+
+/* Solo para ver hasta donde van los bordes en los divs
+hay que borrar esto despues */
+.bordesnegros{
+    border: 1px solid black;
+}
+
+

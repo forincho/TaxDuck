@@ -41,7 +41,7 @@
             <img class="h-32 mt-4 mb-8" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
         </button>    
         <li class="NavOn shadow-md flex items-center justify-center font-bold text-xl h-14">
-            <button class="w-full h-full">HOME</button>
+            <button class="w-full h-full font-bold">HOME</button>
         </li>
         <li class="NavOff flex items-center justify-center text-xl h-14">
             <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
@@ -64,118 +64,125 @@
 </div>
 
     <!-- Ingresos -->
-<div id="DivIngresos" class="mt-12 w-10/12 h-4/5">
+    <!-- ARREGLAR BORDER RADIUS Y OVERFLOW (SCROLL) -->
+<div id="DivIngresos" class="mt-12 w-11/12">
     <div class="flex justify-between font-bold text-2xl">
         <h2>Ingresos</h2>
         <h2>Total: $11,355.00</h2>
     </div>
 
     <!-- Tabla Ingresos -->
-    <!-- arreglar margen izquierdo y bordes -->
-    <table id="Tabla" class="text-sm text-center w-full h-auto shadow-lg">
-        <tr class="TitulosTabla mt-4 h-6">
-            <th><input type="checkbox"></th>
-            <th>Nº</th>
-            <th>Fecha</th>
-            <th>Concepto</th>
-            <th>Monto</th>
-            <th>Documento</th>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>001</td>
-            <td>12/06/2021</td>
-            <td>Implement Traffic Coatings</td>
-            <td>$1,892.00</td>
-            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>002</td>
-            <td>15/06/2021</td>
-            <td>Discharge Termite Control</td>
-            <td>$3,255.00</td>
-            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>003</td>
-            <td>17/06/2021</td>
-            <td>Quash Sheet Waterproofing</td>
-            <td>$3,202.00</td>
-            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>004</td>
-            <td>20/06/2021</td>
-            <td>Rectify Visual Display Systems</td>
-            <td>$3,006.00</td>
-            <td class="text-red-500	"><i class="far fa-file-pdf"></i></td>
-        </tr>
+    <table id="Tabla" class="text-sm text-center h-1/2 w-full shadow-lg">
+        <thead>
+            <tr class="TitulosTabla mt-4 h-6">
+                <th class="pl-2"><input type="checkbox"></th>
+                <th class="pl-2">Nº</th>
+                <th class="pl-2">Fecha</th>
+                <th>Concepto</th>
+                <th class="pr-4">Monto</th>
+                <th>Documento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="pl-2">001</td>
+                <td class="pl-2">12/06/2021</td>
+                <td class="text-left pl-8">Implement Traffic Coatings</td>
+                <td class="pr-4">$1,892.00</td>
+                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="pl-2">002</td>
+                <td class="pl-2">15/06/2021</td>
+                <td class="text-left pl-8">Discharge Termite Control</td>
+                <td class="pr-4">$3,255.00</td>
+                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td>003</td>
+                <td class="pl-2">17/06/2021</td>
+                <td class="text-left pl-8">Quash Sheet Waterproofing</td>
+                <td class="pr-4">$3,202.00</td>
+                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="pl-2">004</td>
+                <td class="pl-2">20/06/2021</td>
+                <td class="text-left pl-8">Rectify Visual Display Systems</td>
+                <td class="pr-4">$3,006.00</td>
+                <td class="text-red-500	"><i class="far fa-file-pdf"></i></td>
+            </tr>
+        </tbody>
     </table>
 </div>
 
 <!-- Boton Agregar Ingreso -->
-<div id="BAgregarIngreso" class="flex justify-center items-center w-3/5 h-1/2">
+<div id="BAgregarIngreso" class="flex justify-center items-center w-3/5 h-1/2 mt-4">
     <button class="BBAgregar w-full h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
 </div>
 
     <!--Div Gastos -->
-    <div id="DivGastos" class="-mt-16 w-10/12 h-4/5">
+    <div id="DivGastos" class="-mt-12 w-11/12">
     <div class="flex justify-between font-bold text-2xl">
         <h2>Gastos</h2>
         <h2>Total: $10,649.00</h2>
     </div>
 
     <!-- Tabla Gastos -->
-    <table id="Tabla" class="text-sm text-center w-full h-auto shadow-lg">
-        <tr class="TitulosTabla mt-4 h-6">
-            <th><input type="checkbox"></th>
-            <th>Fecha</th>
-            <th>Concepto</th>
-            <th>Monto IVA</th>
-            <th>Estado</th>
-            <th>Documento</th>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>12/06/2021</td>
-            <td>Stage Collar & ECP</td>
-            <td>$7,508.00</td>
-            <td class="text-red-500">Rechazada</td>
-            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>15/06/2021</td>
-            <td>Wiper Plug</td>
-            <td>$7,210.00</td>
-            <td class="text-red-500">Rechazada</td>
-            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>17/06/2021</td>
-            <td>Drill Pipe Dart Test Sub</td>
-            <td>$8,552.00</td>
-            <td>Aprobada</td>    
-            <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        <tr class="h-10">
-            <td><input type="checkbox"></td>
-            <td>20/06/2021</td>
-            <td>Tie Back Stem</td>
-            <td>$2,097.00</td>
-            <td>Pendiente</td>
-            <td class="text-red-500	"><i class="far fa-file-pdf"></i></td>
-        </tr>
-        
+    <table id="Tabla" class="text-sm text-center h-1/2 w-full shadow-lg">
+        <thead>
+            <tr class="TitulosTabla mt-4 h-6">
+                <th class="pl-2"><input type="checkbox"></th>
+                <th class="pl-2">Nº</th>
+                <th class="pl-2">Fecha</th>
+                <th>Concepto</th>
+                <th class="pr-4">Monto</th>
+                <th>Documento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="pl-2">001</td>
+                <td class="pl-2">12/06/2021</td>
+                <td class="text-left pl-8">Implement Traffic Coatings</td>
+                <td class="pr-4">$1,892.00</td>
+                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="pl-2">002</td>
+                <td class="pl-2">15/06/2021</td>
+                <td class="text-left pl-8">Discharge Termite Control</td>
+                <td class="pr-4">$3,255.00</td>
+                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td>003</td>
+                <td class="pl-2">17/06/2021</td>
+                <td class="text-left pl-8">Quash Sheet Waterproofing</td>
+                <td class="pr-4">$3,202.00</td>
+                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-10">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="pl-2">004</td>
+                <td class="pl-2">20/06/2021</td>
+                <td class="text-left pl-8">Rectify Visual Display Systems</td>
+                <td class="pr-4">$3,006.00</td>
+                <td class="text-red-500	"><i class="far fa-file-pdf"></i></td>
+            </tr>
+        </tbody>
     </table>
 </div>
 
     <!-- Boton Agregar Gasto -->
-    <div id="BAgregarGasto" class="flex justify-center items-center w-3/5 h-1/2">
+    <div id="BAgregarGasto" class="flex justify-center items-center w-3/5 h-1/2 -mt-20">
         <button class="BBAgregar w-full h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
     </div>
 
@@ -185,12 +192,15 @@
     </div>
 
     <!-- Calendario -->
-    <div id="Calendario" class="w-2/3 h-2/3 -mt-24 flex justify-items-center justify-center flex-wrap shadow-xl">
-        <h1 class="TituloCalendario text-3xl text-center font-bold h-8 w-full">Calendario de Vencimientos</h1>
-        <h2 class="TituloCalendario text-center w-full border-b-0 font-bold mx-32">
-            <button class="font-bold mr-2"><</button>
-            Julio de 2021
-            <button class="font-bold ml-2">></button></h2>
+    <div id="Calendario" class="w-1/2 h-3/5 -mt-24 px-2 flex justify-items-center justify-center flex-wrap shadow-xl">
+        
+        <h1 class="TituloCalendario text-xl text-center font-bold h-8 w-full">Calendario de Vencimientos</h1>
+        <div class="flex justify-between items-center -mt-2 h-8 w-7/12">
+            <button class="TituloCalendario font-bold"><</button>
+            <h2 class="TituloCalendario text-xl text-center w-auto border-b-0 font-bold">Julio de 2021</h2>
+            <button class="TituloCalendario font-bold">></button>
+        </div>
+        
         <ol id="EstiloCalendario" class="w-full">
             <li class="font-bold text-center">D</li>
             <li class="font-bold text-center">L</li>
@@ -217,7 +227,7 @@
             <li class="text-center">12</li>
             <li class="text-center">13</li>
             <li class="text-center">14</li>
-            <li class="VencimientoDGI text-center font-bold mx-4">15</li>
+            <li class="VencimientoDGI text-center font-bold mx-2">15</li>
             <li class="text-center">16</li>
             <li class="text-center">17</li>
             <li class="text-center">18</li>
@@ -225,7 +235,7 @@
             <li class="text-center">20</li>
             <li class="text-center">21</li>
             <li class="text-center">22</li>
-            <li class="VencimientoFONASA text-center font-bold mx-4">23</li>
+            <li class="VencimientoFONASA text-center font-bold mx-2">23</li>
             <li class="text-center">24</li>
             <li class="text-center">25</li>
             <li class="text-center">26</li>
@@ -238,9 +248,15 @@
     </div>
 
     <!-- Leyendas -->
-    <div id="Leyenda" class="flex justify-center items-center flex-wrap pb-8 mx-36 mt-24">
-        <div class="TituloLeyenda w-7/12 flex justify-between items-center"><span class="VencimientoDGI h-8 w-8"></span><h4 class="inline font-bold">Vencimiento DGI</h4></div>
-        <div class="TituloLeyenda w-7/12 flex justify-between items-center"><span class="VencimientoFONASA h-8 w-8"></span><h4 class="inline font-bold">Vencimiento DGI</h4></div>
+    <div id="Leyenda" class="flex justify-center items-center flex-wrap w-2/6 h-2/6 mt-10">
+        <div class="TituloLeyenda w-full flex items-center">
+            <span class="VencimientoDGI h-8 w-8 mr-4"></span>
+            <h4 class="inline font-bold">Vencimiento DGI</h4>
+        </div>
+        <div class="TituloLeyenda w-full flex justify-between items-center">
+            <span class="VencimientoFONASA h-8 w-8"></span>
+            <h4 class="inline font-bold">Vencimiento FONASA</h4>
+        </div>
     </div>
 
 </div>
