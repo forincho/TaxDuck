@@ -111,6 +111,7 @@
 
 .TitulosTabla{
     border-bottom: 1px solid #14213D;
+    border-collapse: collapse;
 }
 
 td{
@@ -145,6 +146,7 @@ td{
 #BCalcularEstimado{
     grid-column: 3 / span 1;
     grid-row:2 / span 2;
+    border: 1px solid black;
 }
 
 .BEstimado{
