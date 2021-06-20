@@ -99,6 +99,23 @@
     grid-row: 2 / span 1;
 }
 
+#ContenedorTituloMesMobileTablet{
+    grid-column: 1/ span 3;
+    grid-row: 2 / span 1;
+}
+
+.TituloMesMobileTablet{
+    color: #14213D;
+}
+
+#Ven-DGI{
+    color: #FCA311;
+}
+
+#Ven-FONASA{
+    color: #A46CC4;
+}
+
 #DivIngresos{
     color: #14213D;
     grid-column: 2 /span 1;

@@ -22,7 +22,7 @@
 <div id="containerMainDesk" class="justify-items-center">
 
     <!-- Header -->
-<header id="headerDesk" class="font-bold flex items-center justify-between w-full">
+<header id="headerDesk" class="hidden lg:flex font-bold items-center justify-between w-full">
     <button>
         <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
     </button>
@@ -59,8 +59,22 @@
 </nav>
 
     <!-- Titulo Mes -->
-<div  id="TituloMes" class="my-8 flex justify-center items-center">
+<div  id="TituloMes" class="hidden my-8 lg:flex justify-center items-center">
     <h1 class="font-bold text-3xl">JUNIO 2021</h1>
+</div>
+
+<!-- Titulo Mes para Mobile y Tablet -->
+<div id="ContenedorTituloMesMobileTablet" class="flex flex-wrap h-auto w-9/12 lg:hidden">
+    <h1 class="TituloMesMobileTablet text-3xl font-bold w-11/12">JUNIO 2021</h1>
+    <!-- Vencimientos para Mobile y Tablet -->
+    <div class="w-1/12">
+        <h4 class="TituloMesMobileTablet text-xl font-bold">Vencimientos</h4>
+        <p class="TituloLeyenda flex justify-between font-bold">DGI <span id="Ven-DGI">15/07</span></p>
+        <p class="TituloLeyenda flex justify-between font-bold">FONASA <span id="Ven-FONASA">25/07</span></p>
+    </div>
+    <div class="flex justify-center w-full -mt-8">
+        <button class="BEstimado font-bold w-1/2 h-8">CALCULAR ESTIMADO</button>
+    </div>    
 </div>
 
     <!-- Ingresos -->
@@ -121,12 +135,12 @@
 </div>
 
 <!-- Boton Agregar Ingreso -->
-<div id="BAgregarIngreso" class="flex justify-center items-center w-4/5 h-1/2 mt-4">
-    <button class="BBAgregar w-full h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
+<div id="BAgregarIngreso" class="flex justify-center items-center w-4/5 h-1/2 lg:mt-4">
+    <button class="BBAgregar font-bold w-full h-8 lg:h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
 </div>
 
     <!--Div Gastos -->
-    <div id="DivGastos" class="-mt-12 w-11/12">
+    <div id="DivGastos" class="-mt-20 w-11/12 lg:-mt-12">
     <div class="flex justify-between font-bold text-xl xl:text-2xl">
         <h2>Gastos</h2>
         <h2>Total: $10,649.00</h2>
@@ -183,8 +197,8 @@
 </div>
 
     <!-- Boton Agregar Gasto -->
-    <div id="BAgregarGasto" class="flex justify-center items-center w-4/5 h-1/2 -mt-28">
-        <button class="BBAgregar w-full h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
+    <div id="BAgregarGasto" class="flex justify-center items-center -mt-36 w-4/5 h-1/2 lg:-mt-28">
+        <button class="BBAgregar font-bold w-full h-8 lg:h-2/3"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
     </div>
 
     <!-- Boton Calcular Estimado -->
@@ -248,7 +262,7 @@
     </div>
 
     <!-- Leyendas -->
-    <div id="Leyenda" class="hidden lg:flex  justify-center items-center flex-wrap h-1/2 w-4/5 xl:w-2/3">
+    <div id="Leyenda" class="hidden lg:flex justify-center items-center flex-wrap h-1/2 w-4/5 xl:w-3/5">
         <div class=" TituloLeyenda w-full flex items-center">
             <span class="VencimientoDGI w-8 h-8 mr-8"></span>
             <h4 class="inline font-bold">Vencimiento DGI</h4>
