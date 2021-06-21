@@ -149,6 +149,7 @@ h2 {
 .header {
     background-color: #14213D;
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 /* cambiar a rubik */
@@ -212,4 +213,20 @@ h2 {
     background-color: #FCA311;
     border: 1px solid #FCA311;
     margin-bottom: -0.450rem;
+}
+
+/* CSS Fori */
+#navDesk{
+    border: 1px solid #14213D;
+}
+
+.NavOn{
+    background-color: #14213D;
+    border: 1px solid #14213D;
+    color: #FCA311;
+}
+
+.NavOff{
+    border: 1px solid #14213D;
+    color: #14213D;
 }
