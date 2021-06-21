@@ -21,261 +21,263 @@
     <!-- Contenedor -->
 <div id="containerMainDesk" class="flex flex-wrap">
 
-    <!-- Header -->
-<header id="headerDesk" class="hidden lg:flex font-bold items-center justify-between w-full h-16">
-    <button>
-        <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
-    </button>
-    <nav class="inline-flex flex w-4/12 pr-8 justify-between items-center">
-        <button class="font-bold">INGRESOS</button>
-        <button class="font-bold">GASTOS</button>
-        <button class="font-bold">COMPROBANTES</button>
-        <button><i class="fas fa-ellipsis-v"></i></button>
-    </nav>  
-</header>
+        <!-- Header --> 
+    <header id="headerDesk" class="lg:flex font-bold items-center justify-between w-full">
+        <button>
+            <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
+        </button>
+        <nav class="inline-flex flex w-4/12 pr-8 justify-between items-center">
+            <button class="font-bold">INGRESOS</button>
+            <button class="font-bold">GASTOS</button>
+            <button class="font-bold">COMPROBANTES</button>
+            <button><i class="fas fa-ellipsis-v"></i></button>
+        </nav>  
+    </header>
 
-    <!-- Navigation Desktop -->
-<nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6 h-screen">
-    <ul class="w-full">
-        <button class="flex justify-center w-full">
-            <img class="h-32 mt-4 mb-8" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
-        </button>    
-        <li class="NavOn shadow-md flex items-center justify-center font-bold text-base h-14 xl:text-xl">
-            <button class="w-full h-full font-bold">HOME</button>
-        </li>
-        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-            <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
-        </li>
-        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-            <button class="font-bold w-full h-full">AGREGAR GASTO</button>
-        </li>
-        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-           <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
-        </li>
-        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-           <button class="font-bold w-full h-full">PROYECCIONES</button>
-        </li>
-    </ul>
-</nav>
+        <!-- Navigation Desktop -->
+    <nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6">
+        <ul class="w-full">
+            <button class="flex justify-center w-full">
+                <img class="h-32 mt-4 mb-8" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
+            </button>    
+            <li class="NavOn shadow-md flex items-center justify-center font-bold text-base h-14 xl:text-xl">
+                <button class="w-full h-full font-bold">HOME</button>
+            </li>
+            <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+                <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+            </li>
+            <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+                <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+            </li>
+            <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+            <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+            </li>
+            <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+            <button class="font-bold w-full h-full">PROYECCIONES</button>
+            </li>
+        </ul>
+    </nav>
 
-<main class="flex flex-col w-3/6 items-center">
-    <!-- Titulo Mes -->
-    <h1 class="coloraz font-bold my-8 text-3xl hidden w-full lg:flex justify-center">JUNIO 2021</h1>
+    <main class="w-11/12 flex flex-col items-center lg:w-3/6">
+        <!-- Titulo Mes -->
+        <h1 class="hidden coloraz font-bold my-8 text-3xl w-full lg:flex justify-center">JUNIO 2021</h1>
 
 
-<!-- Titulo Mes para Mobile y Tablet -->
-<div id="ContenedorTituloMesMobileTablet" class="flex flex-wrap w-9/12 lg:hidden">
-    <h1 class="TituloMesMobileTablet text-3xl font-bold w-11/12">JUNIO 2021</h1>
-    <!-- Vencimientos para Mobile y Tablet -->
-    <div class="w-1/12">
-        <h4 class="TituloMesMobileTablet text-xl font-bold">Vencimientos</h4>
-        <p class="TituloLeyenda flex justify-between font-bold">DGI <span id="Ven-DGI">15/07</span></p>
-        <p class="TituloLeyenda flex justify-between font-bold">FONASA <span id="Ven-FONASA">25/07</span></p>
-    </div>
-    <div class="flex justify-center w-full -mt-8">
-        <button class="BEstimado font-bold w-1/2 h-8">CALCULAR ESTIMADO</button>
-    </div>    
-</div>
-
-    <!-- Ingresos -->
-    <!-- ARREGLAR BORDER RADIUS Y OVERFLOW (SCROLL) -->
-        
-        <div class="flex coloraz flex justify-between w-10/12 font-bold text-xl xl:text-2xl">
-            <h2>Ingresos</h2>
-            <h2>Total: $11,355.00</h2>
+    <!-- Titulo Mes para Mobile y Tablet -->
+    <div class=" flex flex-wrap justify-between w-10/12 lg:hidden">
+        <div class=" w-3/5">
+            <h1 class="TituloMesMobileTablet  text-3xl font-bold">JUNIO 2021</h1>
         </div>
-        
-        
-    <!-- Tabla Ingresos -->
-    <table id="Tabla" class="coloraz text-xs text-center w-10/12 shadow-lg">
-        <thead>
-            <tr class="TitulosTabla coloraz h-6">
-                <th class="pl-2 align-bottom"><input type="checkbox"></th>
-                <th class="pl-2 xl:text-base">Nº</th>
-                <th class="pl-2 xl:text-base">Fecha</th>
-                <th class="pl-2 xl:text-base">Concepto</th>
-                <th class="px-2 xl:text-base">Monto</th>
-                <th class="px-2 xl:text-base">Documento</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="pl-2 xl:text-base">001</td>
-                <td class="pl-2 xl:text-base">12/06/2021</td>
-                <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
-                <td class="px-2 xl:text-base">$3,255.00</td>
-                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="pl-2 xl:text-base">001</td>
-                <td class="pl-2 xl:text-base">12/06/2021</td>
-                <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
-                <td class="px-2 xl:text-base">$3,255.00</td>
-                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="pl-2 xl:text-base">001</td>
-                <td class="pl-2 xl:text-base">12/06/2021</td>
-                <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
-                <td class="px-2 xl:text-base">$3,255.00</td>
-                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="pl-2 xl:text-base">001</td>
-                <td class="pl-2 xl:text-base">12/06/2021</td>
-                <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
-                <td class="px-2 xl:text-base">$3,255.00</td>
-                <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-        </tbody>
-    </table>
-
-<!-- Boton Agregar Ingreso -->
-<div id="BAgregarIngreso" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
-    <button class="BBAgregar font-bold h-3/5 w-full rounded-lg"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
-</div>
-
-    <!-- Titulo Gastos -->
-    <div class="coloraz flex justify-between items-end w-10/12 font-bold text-xl xl:text-2xl">
-        <h2>Gastos</h2>
-        <h2>Total: $10,649.00</h2>
+        <!-- Vencimientos para Mobile y Tablet -->
+        <div>
+            <h4 class="TituloMesMobileTablet text-xl font-bold">Vencimientos</h4>
+            <p class="coloraz flex justify-between font-bold">DGI <span id="Ven-DGI">15/07</span></p>
+            <p class="coloraz flex justify-between font-bold">FONASA <span id="Ven-FONASA">25/07</span></p>
+        </div>
+        <div class="w-full  flex justify-center my-4">                    
+            <button class="BEstimado font-bold w-10/12 h-10 rounded-lg">CALCULAR ESTIMADO</button>
+        </div>
     </div>
 
-    <!-- Tabla Gastos -->
-    <table id="Tabla" class="coloraz text-xs text-center w-10/12 shadow-lg">
-        <thead>
-            <tr class="TitulosTabla mt-4 h-6">
-                <th class="pl-2"><input type="checkbox"></th>
-                <th class="pl-2 xl:text-base">Fecha</th>
-                <th class="pl-2 xl:text-base">Concepto</th>
-                <th class="px-2 xl:text-base">Monto IVA</th>
-                <th class="px-2 xl:text-base">Estado</th>
-                <th class="px-2 xl:text-base">Documento</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="xl:px-2 xl:text-base">12/06/2021</td>
-                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
-                <td class=" w-auto xl:text-base">$3,255.00</td>
-                <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
-                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="xl:px-2 xl:text-base">12/06/2021</td>
-                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
-                <td class=" w-auto xl:text-base">$3,255.00</td>
-                <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
-                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="xl:px-2 xl:text-base">12/06/2021</td>
-                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
-                <td class=" w-auto xl:text-base">$3,255.00</td>
-                <td class="px-2 text-left xl:text-base">Aprovada</td>
-                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
-            <tr class="h-8">
-                <td class="pl-2"><input type="checkbox"></td>
-                <td class="xl:px-2 xl:text-base">12/06/2021</td>
-                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
-                <td class=" w-auto xl:text-base">$3,255.00</td>
-                <td class=" px-2 text-left xl:text-base">Pendiente</td>
-                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
-            </tr>
+        <!-- Ingresos -->
+        <!-- ARREGLAR BORDER RADIUS Y OVERFLOW (SCROLL) -->
             
-        </tbody>
-    </table>
-
-
-    <!-- Boton Agregar Gasto -->
-    <div id="BAgregarGasto" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
-        <button class="BBAgregar w-full h-3/5 font-bold rounded-lg"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
-    </div>
-</main>
-
-    <!-- Boton Calcular Estimado -->
-    <aside class="w-2/6 flex flex-wrap flex-col items-center">
-        <div id="BCalcularEstimado" class="hidden lg:flex justify-center items-center my-8 h-16 w-2/3">
-            <button class="BEstimado w-full h-full rounded-lg font-bold">CALCULAR ESTIMADO</button>
-        </div>
-    
-        <!-- Calendario -->
-        <!-- Titulos del Calendario -->
-        <div id="Calendario" class="hidden lg:flex h-2/5 w-4/5 justify-center flex-wrap shadow-xl mb-8">
-            <h1 class="TituloCalendario text-lg text-center font-bold xl:text-2xl">
-                Calendario de Vencimientos
-            </h1>
-            <div class="flex justify-between -mt-16 text-xl items-center w-7/12">
-                <button class="TituloCalendario font-bold"><</button>
-                <h2 class="TituloCalendario text-base text-center font-bold xl:text-xl">Julio de 2021</h2>
-                <button class="TituloCalendario text-xl font-bold">></button>
+            <div class="flex coloraz flex justify-between w-10/12 font-bold text-xl xl:text-2xl">
+                <h2>Ingresos</h2>
+                <h2>Total: $11,355.00</h2>
             </div>
-        <!-- Meses y Dias del Calendario     -->
-            <ol id="EstiloCalendario" class="w-full">
-                <li class="font-bold text-center">D</li>
-                <li class="font-bold text-center">L</li>
-                <li class="font-bold text-center">M</li>
-                <li class="font-bold text-center">M</li>
-                <li class="font-bold text-center">J</li>
-                <li class="font-bold text-center">V</li>
-                <li class="font-bold text-center">S</li>
-                <li class="mespasado text-center">27</li>
-                <li class="mespasado text-center">28</li>
-                <li class="mespasado text-center">29</li>
-                <li class="mespasado text-center">30</li>
-                <li class="text-center">1</li>
-                <li class="text-center">2</li>
-                <li class="text-center">3</li>
-                <li class="text-center">4</li>
-                <li class="text-center">5</li>
-                <li class="text-center">6</li>
-                <li class="text-center">7</li>
-                <li class="text-center">8</li>
-                <li class="text-center">9</li>
-                <li class="text-center">10</li>
-                <li class="text-center">11</li>
-                <li class="text-center">12</li>
-                <li class="text-center">13</li>
-                <li class="text-center">14</li>
-                <li class="VencimientoDGI text-center font-bold mx-1 xl:mx-2">15</li>
-                <li class="text-center">16</li>
-                <li class="text-center">17</li>
-                <li class="text-center">18</li>
-                <li class="text-center">19</li>
-                <li class="text-center">20</li>
-                <li class="text-center">21</li>
-                <li class="text-center">22</li>
-                <li class="VencimientoFONASA text-center font-bold mx-1 xl:mx-2">23</li>
-                <li class="text-center">24</li>
-                <li class="text-center">25</li>
-                <li class="text-center">26</li>
-                <li class="text-center">27</li>
-                <li class="text-center">28</li>
-                <li class="text-center">29</li>
-                <li class="text-center">30</li>
-                <li class="text-center">31</li>
-            </ol>
+            
+            
+        <!-- Tabla Ingresos -->
+        <table id="Tabla" class="coloraz text-xs text-center w-10/12 shadow-lg">
+            <thead>
+                <tr class="TitulosTabla coloraz h-6">
+                    <th class="pl-2 align-bottom"><input type="checkbox"></th>
+                    <th class="pl-2 xl:text-base">Nº</th>
+                    <th class="pl-2 xl:text-base">Fecha</th>
+                    <th class="pl-2 xl:text-base">Concepto</th>
+                    <th class="px-2 xl:text-base">Monto</th>
+                    <th class="px-2 xl:text-base">Documento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="pl-2 xl:text-base">001</td>
+                    <td class="pl-2 xl:text-base">12/06/2021</td>
+                    <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
+                    <td class="px-2 xl:text-base">$3,255.00</td>
+                    <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="pl-2 xl:text-base">001</td>
+                    <td class="pl-2 xl:text-base">12/06/2021</td>
+                    <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
+                    <td class="px-2 xl:text-base">$3,255.00</td>
+                    <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="pl-2 xl:text-base">001</td>
+                    <td class="pl-2 xl:text-base">12/06/2021</td>
+                    <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
+                    <td class="px-2 xl:text-base">$3,255.00</td>
+                    <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="pl-2 xl:text-base">001</td>
+                    <td class="pl-2 xl:text-base">12/06/2021</td>
+                    <td class="text-left pl-4 xl:pl-4 xl:text-base">Implement Traffic</td>
+                    <td class="px-2 xl:text-base">$3,255.00</td>
+                    <td class="text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- Boton Agregar Ingreso -->
+    <div id="BAgregarIngreso" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
+        <button class="BBAgregar font-bold h-3/5 w-full rounded-lg"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
+    </div>
+
+        <!-- Titulo Gastos -->
+        <div class="coloraz flex justify-between items-end w-10/12 font-bold text-xl xl:text-2xl">
+            <h2>Gastos</h2>
+            <h2>Total: $10,649.00</h2>
         </div>
-    
-        <!-- Leyendas -->
-        <div id="Leyenda" class="hidden bordesnegros lg:flex flex-col justify-between items-center h-20 w-full">
-            <section class="bordesnegros TituloLeyenda w-4/5 flex items-center xl:w-3/5">
-                <span class="VencimientoDGI w-8 h-8 mr-8"></span>
-                <h4 class="inline font-bold">Vencimiento DGI</h4>
-            </section>
-            <section class="bordesnegros TituloLeyenda w-4/5 flex items-center xl:w-3/5">
-                <span class="VencimientoFONASA h-8 w-8 mr-8"></span>
-                <h4 class="inline font-bold">Vencimiento FONASA</h4>
-            </section>
+
+        <!-- Tabla Gastos -->
+        <table id="Tabla" class="coloraz text-xs text-center w-10/12 shadow-lg">
+            <thead>
+                <tr class="TitulosTabla mt-4 h-6">
+                    <th class="pl-2"><input type="checkbox"></th>
+                    <th class="pl-2 xl:text-base">Fecha</th>
+                    <th class="pl-2 xl:text-base">Concepto</th>
+                    <th class="px-2 xl:text-base">Monto IVA</th>
+                    <th class="px-2 xl:text-base">Estado</th>
+                    <th class="px-2 xl:text-base">Documento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                    <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                    <td class=" w-auto xl:text-base">$3,255.00</td>
+                    <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
+                    <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                    <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                    <td class=" w-auto xl:text-base">$3,255.00</td>
+                    <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
+                    <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                    <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                    <td class=" w-auto xl:text-base">$3,255.00</td>
+                    <td class="px-2 text-left xl:text-base">Aprovada</td>
+                    <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                <tr class="h-8">
+                    <td class="pl-2"><input type="checkbox"></td>
+                    <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                    <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                    <td class=" w-auto xl:text-base">$3,255.00</td>
+                    <td class=" px-2 text-left xl:text-base">Pendiente</td>
+                    <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+
+        <!-- Boton Agregar Gasto -->
+        <div id="BAgregarGasto" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
+            <button class="BBAgregar w-full h-3/5 font-bold rounded-lg"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
         </div>
+    </main>
+
+        <!-- Boton Calcular Estimado -->
+    <aside class="hidden lg:flex flex-wrap flex-col w-2/6 items-center">
+            <div id="BCalcularEstimado" class="hidden lg:flex justify-center items-center my-8 h-16 w-2/3">
+                <button class="BEstimado w-full h-full rounded-lg font-bold">CALCULAR ESTIMADO</button>
+            </div>
+        
+            <!-- Calendario -->
+            <!-- Titulos del Calendario -->
+            <div id="Calendario" class="hidden lg:flex h-2/5 w-4/5 justify-center flex-wrap shadow-xl mb-8">
+                <h1 class="TituloCalendario text-lg text-center font-bold xl:text-2xl">
+                    Calendario de Vencimientos
+                </h1>
+                <div class="flex justify-between -mt-16 text-xl items-center w-7/12">
+                    <button class="TituloCalendario font-bold"><</button>
+                    <h2 class="TituloCalendario text-base text-center font-bold xl:text-xl">Julio de 2021</h2>
+                    <button class="TituloCalendario text-xl font-bold">></button>
+                </div>
+            <!-- Meses y Dias del Calendario     -->
+                <ol id="EstiloCalendario" class="w-full">
+                    <li class="font-bold text-center">D</li>
+                    <li class="font-bold text-center">L</li>
+                    <li class="font-bold text-center">M</li>
+                    <li class="font-bold text-center">M</li>
+                    <li class="font-bold text-center">J</li>
+                    <li class="font-bold text-center">V</li>
+                    <li class="font-bold text-center">S</li>
+                    <li class="mespasado text-center">27</li>
+                    <li class="mespasado text-center">28</li>
+                    <li class="mespasado text-center">29</li>
+                    <li class="mespasado text-center">30</li>
+                    <li class="text-center">1</li>
+                    <li class="text-center">2</li>
+                    <li class="text-center">3</li>
+                    <li class="text-center">4</li>
+                    <li class="text-center">5</li>
+                    <li class="text-center">6</li>
+                    <li class="text-center">7</li>
+                    <li class="text-center">8</li>
+                    <li class="text-center">9</li>
+                    <li class="text-center">10</li>
+                    <li class="text-center">11</li>
+                    <li class="text-center">12</li>
+                    <li class="text-center">13</li>
+                    <li class="text-center">14</li>
+                    <li class="VencimientoDGI text-center font-bold mx-1 xl:mx-2">15</li>
+                    <li class="text-center">16</li>
+                    <li class="text-center">17</li>
+                    <li class="text-center">18</li>
+                    <li class="text-center">19</li>
+                    <li class="text-center">20</li>
+                    <li class="text-center">21</li>
+                    <li class="text-center">22</li>
+                    <li class="VencimientoFONASA text-center font-bold mx-1 xl:mx-2">23</li>
+                    <li class="text-center">24</li>
+                    <li class="text-center">25</li>
+                    <li class="text-center">26</li>
+                    <li class="text-center">27</li>
+                    <li class="text-center">28</li>
+                    <li class="text-center">29</li>
+                    <li class="text-center">30</li>
+                    <li class="text-center">31</li>
+                </ol>
+            </div>
+        
+            <!-- Leyendas -->
+            <div id="Leyenda" class="hidden lg:flex flex-col justify-between items-center h-20 w-full">
+                <section class="coloraz w-4/5 flex items-center xl:w-3/5">
+                    <span class="VencimientoDGI w-8 h-8 mr-8"></span>
+                    <h4 class="inline font-bold">Vencimiento DGI</h4>
+                </section>
+                <section class="coloraz w-4/5 flex items-center xl:w-3/5">
+                    <span class="VencimientoFONASA h-8 w-8 mr-8"></span>
+                    <h4 class="inline font-bold">Vencimiento FONASA</h4>
+                </section>
+            </div>
     </aside>
 </div>
 </body>

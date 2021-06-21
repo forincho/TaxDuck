@@ -152,18 +152,8 @@ td{
     background-color: #A46CC4;
     border: 1px solid #14213D;
 }
-
-#Leyenda{
-    grid-column: 3 / span 1;
-    grid-row: 5 / span 1;
-
-}
 .coloraz{
     color:#14213D;
-
-}
-.TituloLeyenda{
-    color: #14213D;
 }
 
 /* Solo para ver hasta donde van los bordes en los divs
@@ -172,4 +162,12 @@ hay que borrar esto despues */
     border: 1px solid black;
 }
 
+#headerDesk{
+    height: 10vh;
+    min-height: 4rem;
+}
 
+#NavDesk{
+    height: 90vh;
+    min-height: auto;
+}
