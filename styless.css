@@ -65,6 +65,11 @@
     color:#A46CC4;
 }
 
+#headerOn{
+    background-color: #FCA311;
+    border: 1px solid #FCA311;
+}
+
 #NavDesk{
     border-right: 1px solid #14213D;
 }
