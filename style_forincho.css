@@ -22,20 +22,13 @@
 #ingresar{
     background-color:white;
     border: 1px solid #14213D;
-    color: #14213D;
 }
 
 
 .pelota{
     background-color: #FCA311; 
 }
-#login{
-    color: #14213D;
-}
 
-.titulo_form{
-    color: #14213D;
-}
 #marco_am{
     border: 1px solid #FCA311;
 
@@ -49,12 +42,8 @@
 .botoningreso{
     border: 1px solid #14213D;
     background-color: #FCA311;
-    color: #14213D;
-    }
-
-.tituloslink{
-    color: #C4C4C4;
 }
+
 
 #headerDesk{
     background-color: #14213D;
