@@ -19,19 +19,38 @@
 <body>
     
     <!-- Contenedor -->
-<div id="containerMainDesk" class="flex flex-wrap">
+<div id="containerMainDesk" class="flex flex-wrap justify-center">
 
         <!-- Header --> 
-    <header id="headerDesk" class="lg:flex font-bold items-center justify-between w-full">
-        <button>
-            <h1 id="LogoTitulo" class="text-5xl inline ml-6">TaxDuck</h1>
-        </button>
-        <nav class="inline-flex flex w-4/12 pr-8 justify-between items-center">
+    <header id="headerDesk" class="flex font-bold items-center justify-between w-full">
+        <!-- section que tiene logo y titulo -->
+        <section class="flex items-center w-auto pl-4 sm:w-4/12 h-full">
+            <button class="sm:hidden pr-4">
+                <i class="fas fa-bars"></i>
+            </button>            
+            <button>
+                <img class="h-16 lg:hidden" src="./Assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
+            </button>
+            <button>
+                <h1 id="LogoTitulo" class="hidden sm:inline text-3xl md:text-4xl pl-4">TaxDuck</h1>
+            </button>
+        </section>
+        <!-- titulo para Mobile -->
+        <h1 class="coloram text-4xl justify-self-center sm:hidden">MAIN</h1>
+        <!-- Nav para tablet -->
+        <nav id="TabletNav" class="hidden sm:flex justify-between w-8/12 pl-4 lg:hidden">
+            <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
+            <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
+            <button class="font-bold text-sm md:text-base">ESTIMADO</button>
+            <button class="font-bold text-sm md:text-base">PROYECCIONES</button>
+        </nav>
+        <nav class="hidden lg:inline-flex flex w-5/12 pr-8 justify-between items-center">
             <button class="font-bold">INGRESOS</button>
             <button class="font-bold">GASTOS</button>
             <button class="font-bold">COMPROBANTES</button>
             <button><i class="fas fa-ellipsis-v"></i></button>
         </nav>  
+        <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
     </header>
 
         <!-- Navigation Desktop -->
@@ -58,7 +77,7 @@
         </ul>
     </nav>
 
-    <main class="w-11/12 flex flex-col items-center lg:w-3/6">
+    <main class="w-11/12 flex flex-col items-center md:w-8/12 lg:w-3/6">
         <!-- Titulo Mes -->
         <h1 class="hidden coloraz font-bold my-8 text-3xl w-full lg:flex justify-center">JUNIO 2021</h1>
 
