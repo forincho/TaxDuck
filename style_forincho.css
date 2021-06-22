@@ -63,7 +63,6 @@
 
 #LogoTitulo{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#A46CC4;
 }
 
 #NavDesk{
@@ -87,25 +86,6 @@
     border-collapse: collapse;
 }
 
-#TituloMes{
-    color: #14213D;
-}
-.TituloMesMobileTablet{
-    color: #14213D;
-}
-
-#Ven-DGI{
-    color: #FCA311;
-}
-
-#Ven-FONASA{
-    color: #A46CC4;
-}
-
-#DivIngresos{
-    color: #14213D;
-}
-
 .TitulosTabla{
     border-bottom: 1px solid #14213D;
     border-collapse: collapse;
@@ -120,10 +100,6 @@ td{
     color: white;
 }
 
-#DivGastos{
-    color: #14213D;
-}
-
 .BEstimado{
     background-color: #14213D;
     color: white;
@@ -133,14 +109,6 @@ td{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-}
-
-.TituloCalendario{
-    color: #14213D;
-}
-
-.mespasado{
-    color: #C4C4C4;
 }
 
 .VencimientoDGI{
@@ -158,6 +126,14 @@ td{
 
 .coloram{
     color: #FCA311;
+}
+
+.colorgr{
+    color: #C4C4C4;
+}
+
+.colorvio{
+    color: #A46CC4;
 }
 
 /* Solo para ver hasta donde van los bordes en los divs
