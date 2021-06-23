@@ -143,3 +143,27 @@ hay que borrar esto despues */
     height: 90vh;
     min-height: auto;
 }
+
+#total_anual{
+    border-bottom: 2px solid #14213D;
+}
+
+#TotalMesOn{
+    border-bottom: 2px solid #FCA311;
+}
+
+.bkgaz{
+    background-color: #14213D;
+}
+
+.bkgam{
+    background-color: #FCA311;
+}
+
+#DivMensualOff{
+    border: 2px solid #C4C4C4;
+}
+
+#TotalMesOff{
+    border-bottom: 2px solid #14213D;
+}

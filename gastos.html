@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link para CSS -->
+<link rel="stylesheet" href="./style_forincho.css">
+
+<!-- link para tailwind -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- link para font awesome -->
+<script src="https://kit.fontawesome.com/d70f434d57.js" crossorigin="anonymous"></script>
+
+<title>GASTOS</title>
+</head>
+<body>
+<!-- Contenedor -->
+<div id="containerMainDesk" class="flex flex-wrap">
+    <!-- Header --> 
+<header id="headerDesk" class="flex font-bold items-center justify-between w-full">
+    <!-- section que tiene logo y titulo -->
+    <section class="flex items-center w-auto pl-4 sm:w-4/12 h-full">
+        <button class="sm:hidden pr-4">
+            <i class="fas fa-bars"></i>
+        </button>            
+        <button>
+            <img class="h-16 lg:hidden" src="./Assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
+        </button>
+        <button>
+            <h1 id="LogoTitulo" class="hidden colorvio sm:inline text-3xl md:text-4xl pl-4">TaxDuck</h1>
+        </button>
+    </section>
+    <!-- titulo para Mobile -->
+    <h1 class="coloram text-4xl justify-self-center sm:hidden">GASTOS</h1>
+    <!-- Nav para tablet -->
+    <nav id="TabletNav" class="hidden sm:flex justify-between w-8/12 pl-4 lg:hidden">
+        <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
+        <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
+        <button class="font-bold text-sm md:text-base">ESTIMADO</button>
+        <button class="font-bold text-sm md:text-base">PROYECCIONES</button>
+    </nav>
+    <nav class="hidden lg:inline-flex h-full flex w-5/12 pr-8 justify-between items-center">
+        <button class="font-bold">INGRESOS</button>
+        <div class="flex h-full flex flex-col justify-end">
+            <button class="font-bold flex-wrap h-3/5 self-center coloram w-auto">GASTOS</button>
+            <div class="bkgam h-1/5 w-full"></div>
+        </div>
+        <button class="font-bold">COMPROBANTES</button>
+        <button><i class="fas fa-ellipsis-v"></i></button>
+    </nav>  
+    <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
+</header>
+    <!-- Navigation Desktop -->
+<nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6">
+    <ul class="w-full">
+        <button class="flex justify-center w-full">
+            <img class="h-32 mt-4 mb-4" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
+        </button>    
+        <li class="NavOn shadow-md flex items-center justify-center font-bold text-base h-14 xl:text-xl">
+            <button class="w-full h-full font-bold">HOME</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+            <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+            <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+        <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+        <button class="font-bold w-full h-full">PROYECCIONES</button>
+        </li>
+    </ul>
+</nav>
+<main class="mt-4 mx-auto w-11/12 flex flex-col md:w-8/12 lg:w-3/6">
+    <!-- Total ANUAL -->
+    <div class="flex justify-between coloraz">
+        <div class="px-4 border-gray-600 border rounded-xl items-center flex">
+            <h1 class=" font-bold text-4xl">2021</h1>
+            <i class="ml-2 fas fa-caret-down text-5xl "></i>
+        </div>
+        <div class="flex items-center">
+            <p id="total_anual" class=" font-bold text-4xl">Total: $36.684,00</p>
+        </div>
+    </div>
+    <!-- DIV MENSUAL ON -->
+    <div class="bkgaz rounded-xl shadow-lg p-4 flex justify-between mt-4 coloram">
+        <div class="items-center flex">
+            <i class="fas fa-caret-down text-5xl "></i>
+            <h1 class="ml-4 font-bold text-3xl">Junio</h1>
+        </div>
+        <div class="flex items-center">
+            <p id="TotalMesOn" class=" font-bold text-3xl">Total: $10.649,00</p>
+        </div>
+    </div>
+    <!-- Tabla Gastos -->
+    <table id="Tabla" class="coloraz mt-2 text-xs self-end text-center w-10/12 shadow-lg">
+        <thead>
+            <tr class="TitulosTabla mt-4 h-6">
+                <th class="pl-2"><input type="checkbox"></th>
+                <th class="pl-2 xl:text-base">Fecha</th>
+                <th class="pl-2 xl:text-base">Concepto</th>
+                <th class="px-2 xl:text-base">Monto IVA</th>
+                <th class="px-2 xl:text-base">Estado</th>
+                <th class="px-2 xl:text-base">Documento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="h-8">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                <td class=" w-auto xl:text-base">$3,255.00</td>
+                <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
+                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-8">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                <td class=" w-auto xl:text-base">$3,255.00</td>
+                <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
+                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-8">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                <td class=" w-auto xl:text-base">$3,255.00</td>
+                <td class="px-2 text-left xl:text-base">Aprovada</td>
+                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            <tr class="h-8">
+                <td class="pl-2"><input type="checkbox"></td>
+                <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                <td class=" w-auto xl:text-base">$3,255.00</td>
+                <td class=" px-2 text-left xl:text-base">Pendiente</td>
+                <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <!-- DIVS MENSUALES OFF -->
+    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
+        <div class="items-center flex">
+            <i class="fas fa-caret-right text-5xl"></i>
+            <h1 class="ml-4 font-bold text-3xl">Mayo</h1>
+        </div>
+        <div class="flex items-center">
+            <p id="TotalMesOff" class=" font-bold text-3xl">Total: $5.207,00</p>
+        </div>
+    </div>
+    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
+        <div class="items-center flex">
+            <i class="fas fa-caret-right text-5xl"></i>
+            <h1 class="ml-4 font-bold text-3xl">Abril</h1>
+        </div>
+        <div class="flex items-center">
+            <p id="TotalMesOff" class=" font-bold text-3xl">Total: $5.207,00</p>
+        </div>
+    </div>
+    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
+        <div class="items-center flex">
+            <i class="fas fa-caret-right text-5xl"></i>
+            <h1 class="ml-4 font-bold text-3xl">Marzo</h1>
+        </div>
+        <div class="flex items-center">
+            <p id="TotalMesOff" class=" font-bold text-3xl">Total: $5.207,00</p>
+        </div>
+    </div>
+    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
+        <div class="items-center flex">
+            <i class="fas fa-caret-right text-5xl"></i>
+            <h1 class="ml-4 font-bold text-3xl">Febrero</h1>
+        </div>
+        <div class="flex items-center">
+            <p id="TotalMesOff" class=" font-bold text-3xl">Total: $5.207,00</p>
+        </div>
+    </div>
+    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
+        <div class="items-center flex">
+            <i class="fas fa-caret-right text-5xl"></i>
+            <h1 class="ml-4 font-bold text-3xl">Enero</h1>
+        </div>
+        <div class="flex items-center">
+            <p id="TotalMesOff" class=" font-bold text-3xl">Total: $5.207,00</p>
+        </div>
+    </div>
+</main>
+
