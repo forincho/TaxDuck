@@ -16,14 +16,14 @@
 <body>
     
     <!-- Contenedor Principal -->
-<div class="container flex flex-wrap justify-center mx-4">
+<main class=" mt-4 flex flex-col mx-auto items-center h-screen w-10/12">
 
     <!-- Marco Amarillo-->
-    <!-- Corregir Height -->
-    <div id="marco_am" class="rounded-2xl my-8 w-9/12 mx-4 h-full hidden md:inline absolute lg:w-7/12"></div>
-
+    <!-- problema con altura -->
+    <div id="marco_am" class="hidden rounded-2xl absolute sm:block w-9/12 md:w-9/12 lg:w-9/12"></div>
+        
     <!-- Barra LogIn -->
-    <div class="barralogin flex items-end justify-between w-full m-8 mx-8 md:mt-16 md:mx-40 md:w-10/12 lg:max-w-xl">
+    <div class="barralogin w-11/12 flex justify-between items-center mt-4 mb-20 sm:w-10/12 lg:max-w-xl">
         <div class="pelota rounded-full h-10 w-10"></div>
         <div class="pelota rounded-full h-10 w-10"></div>
         <div class="pelota rounded-full h-10 w-10"></div>
@@ -34,38 +34,39 @@
     </div>
 
     <!-- form_Email -->
-    <div class="w-4/5 mt-8 max-w-2xl md:ml-32 md:mt-16">
+    <div class=" w-4/5 mb-2 max-w-2xl">
         <h3 class="coloraz text-lg font-bold">Email</h3>
-        <input class="placeholder h-12 pl-4 mt-4 text-lg font-bold font-mono w-full md:w-10/12" type="text" placeholder="Ingresar Email...">
+        <input class="placeholder h-12 pl-4 mt-4 text-lg font-bold font-mono w-full" type="text" placeholder="Ingresar Email...">
     </div>
 
     <!-- form_Contraseña -->
-    <div class="w-4/5 mt-8 max-w-2xl md:ml-32">
+    <div class=" w-4/5 mb-12 max-w-2xl">
         <h3 class="coloraz text-lg font-bold">Contraseña</h3>
-        <input class="placeholder h-12 pl-4 mt-4 text-lg font-bold font-mono w-full md:w-10/12" type="text" placeholder="Ingresar Contraseña...">
+        <input class="placeholder h-12 pl-4 mt-4 text-lg font-bold font-mono w-full" type="text" placeholder="Ingresar Contraseña...">
     </div>
 
     <!-- Boton Ingresar -->
-    <!-- CORREGIR EL TAMAñO CUANDO PASA A MD -->
-    <div class="botoningreso coloraz rounded-2xl h-12 w-4/5 max-w-2xl mt-16 text-2xl md:ml-32">
-        <button class="font-bold h-12 w-full">Ingresar</button>
+    <div class="botoningreso coloraz mb-2 rounded-2xl h-12 w-4/5 max-w-2xl text-2xl">
+        <button class="font-bold h-12 w-full">INGRESAR</button>
     </div>
 
     <!-- Olvidaste Contraseña -->
-    <div class="colorgr mt-4 lg:mx-56">
-        <h3 class="font-bold mt-8 w-auto text-xl">¿OLVIDASTE TU CONTRASEÑA?</h3>
+<section class=" h-72 flex flex-col justify-between items-center">
+    <div class="colorgr ">
+        <h3 class="font-bold text-xl">¿OLVIDASTE TU CONTRASEÑA?</h3>
     </div>
 
     <!-- Logo -->
-    <div class="mt-8 mx-40 md:mx-40 lg:mx-96">
-        <img class="h-32 md:h-auto" src="./Assets/pato amarillo sin fondo.png" alt="Logo Pato Taxduck">
+    <div class="">
+        <img class="h-48" src="./Assets/pato amarillo sin fondo.png" alt="Logo Pato Taxduck">
     </div>
 
     <!-- No Tienes Cuenta -->
-    <div class="colorgr my-4 lg:mx-56">
-        <h3 class="font-bold mt-8 w-auto text-xl">¿NO TIENES UNA CUENTA? ¡REGÍSTRATE!</h3>
+    <div class="colorgr  mb-4">
+        <h3 class="font-bold w-auto text-xl">¿NO TIENES UNA CUENTA? ¡REGÍSTRATE!</h3>
     </div>
+</section>
 
-</div>
+</main>
 </body>
 </html>
