@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link para CSS -->
+<link rel="stylesheet" href="./style_forincho.css">
+
+<!-- link para tailwind -->
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- link para font awesome -->
+<script src="https://kit.fontawesome.com/d70f434d57.js" crossorigin="anonymous"></script>
+
+<title>TOTAL PROYECCIONES</title>
+</head>
+<body>
+<!-- Contenedor -->
+<div id="containerMainDesk" class="flex flex-wrap">
+    <!-- Header --> 
+<header id="headerDesk" class="flex font-bold items-center justify-between w-full">
+    <!-- section que tiene logo y titulo -->
+    <section class="flex items-center w-auto pl-4 sm:w-4/12 h-full">
+        <button class="sm:hidden pr-4">
+            <i class="fas fa-bars"></i>
+        </button>            
+        <button>
+            <img class="h-16 lg:hidden" src="./Assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
+        </button>
+        <button>
+            <h1 id="LogoTitulo" class="hidden colorvio sm:inline text-3xl md:text-4xl pl-4">TaxDuck</h1>
+        </button>
+    </section>
+    <!-- titulo para Mobile -->
+    <h1 class="coloram text-4xl justify-self-center sm:hidden">PROYECCIONES</h1>
+    <!-- Nav para tablet -->
+    <nav id="TabletNav" class="hidden h-full sm:flex justify-between w-8/12 pl-4 lg:hidden">
+        <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
+        <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
+        <button class="font-bold text-sm md:text-base">ESTIMADO</button>
+        <div class="flex h-full flex flex-col justify-end">
+            <button class="font-bold flex-wrap h-3/5 self-center coloram w-auto">PROYECCIONES</button>
+            <div class="bkgam h-1/5 w-full"></div>
+        </div>
+    </nav>
+    <nav class="hidden lg:inline-flex h-full flex w-5/12 pr-8 justify-between items-center">
+        <button class="font-bold">INGRESOS</button>
+        <button class="font-bold">GASTOS</button>
+        <button class="font-bold">COMPROBANTES</button>
+        <button><i class="fas fa-ellipsis-v"></i></button>
+    </nav>  
+    <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
+</header>
+    <!-- Navigation Desktop -->
+<nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6">
+    <ul class="w-full">
+        <button class="flex justify-center w-full">
+            <img class="h-32 mt-4 mb-4" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
+        </button>    
+        <li class="NavOff shadow-md flex items-center justify-center font-bold text-base h-14 xl:text-xl">
+            <button class="w-full h-full font-bold">HOME</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+            <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+            <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+        </li>
+        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+        <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+        </li>
+        <li class="NavOn flex items-center justify-center text-base h-14 xl:text-xl">
+        <button class="font-bold w-full h-full">PROYECCIONES</button>
+        </li>
+    </ul>
+</nav>
+<main class="mt-4 mx-auto w-11/12 flex flex-col items-center md:w-8/12 lg:w-3/6">
+ <!-- TITULO PROYECCIONES   -->
+    <h1 class="hidden sm:block coloraz font-bold border-bottom-az text-4xl">PROYECCIONES</h1>
+    <!-- ANTICIPOS MENSUALES -->
+    <div class="bkgaz rounded-xl shadow-lg px-2 py-1 flex justify-between mt-8 coloram w-full xl:w-10/12">
+        <button class="items-center flex">
+            <i class="fas fa-caret-down text-3xl "></i>
+            <h1 class="ml-4 font-bold text-xl sm:text-2xl">Anticipos Mensuales</h1>
+        </button>
+        <div class="flex items-center">
+            <p class="font-bold text-2xl">Total: $5.207,00</p>
+        </div>
+    </div>
+    <section class="flex flex-col items-end mt-1 w-full xl:w-10/12">
+        <!-- TOTAL IRPF MENSUAL -->
+        <div id="DivMensualOff" class="rounded-xl shadow-lg py-1 px-2 flex justify-between mt-1 coloraz w-3/4">
+            <div class="items-center flex">
+                <h1 class="font-bold text-xl">IRPF</h1>
+            </div>
+            <div class="flex items-center">
+                <p class="font-bold text-xl">$3.124,20</p>
+            </div>
+        </div>
+                <!-- TOTAL FONANSA MENSUAL -->
+    <div id="DivMensualOff" class="rounded-xl shadow-lg py-1 px-2 flex justify-between mt-1 coloraz w-3/4">
+        <div class="items-center flex">
+            <h1 class="font-bold text-xl">FONANSA</h1>
+        </div>
+        <div class="flex items-center">
+            <p class="font-bold text-xl">$1.041,00</p>
+        </div>
+    </div>
+            <!-- TOTAL IVA MENSUAL -->
+            <div id="DivMensualOff" class="rounded-xl shadow-lg py-1 px-2 flex justify-between mt-1 coloraz w-3/4">
+                <div class="items-center flex">
+                    <h1 class="font-bold text-xl">IVA</h1>
+                </div>
+                <div class="flex items-center">
+                    <p class="font-bold text-xl">$1.041,00</p>
+                </div>
+            </div>
+</section>
+    <!-- ANTICIPOS DICIEMBRE -->
+    <div id="DivMensualOff" class="rounded-xl shadow-lg px-2 py-1 flex justify-between mt-4 coloraz w-full xl:w-10/12">
+        <button class="items-center flex">
+            <i class="fas fa-caret-right text-3xl"></i>
+            <h1 class="ml-4 font-bold text-xl sm:text-2xl">Anticipos Diciembre</h1>
+        </button>
+        <div class="flex items-center">
+            <p class="font-bold text-2xl">Total: $5.207,00</p>
+        </div>
+    </div>
+        <!-- TOTAL ANTICIPOS 2021 -->
+        <div id="DivMensualOff" class="rounded-xl shadow-lg px-2 py-1 flex justify-between mt-4 coloraz w-full xl:w-10/12">
+            <div class="items-center flex">
+                <h1 class="ml-4 font-bold text-xl sm:text-2xl">Total Anticipos 2021</h1>
+            </div>
+            <div class="flex items-center">
+                <p class="font-bold text-2xl">Total: $62.484,00</p>
+            </div>
+        </div>
+    <!-- TITULO LIQUIDACION ANUAL SIMULADA -->
+        <h1 class="mt-8 coloraz font-bold border-bottom-az text-3xl sm:text-4xl">Liquidación Anual Simulada</h1>
+            <!-- TOTAL ANUAL SIMULADA -->
+    <div class="bkgaz rounded-xl shadow-lg px-2 py-1 flex justify-between mt-4 coloram w-full xl:w-10/12">
+        <button class="items-center flex">
+            <i class="fas fa-caret-down text-3xl "></i>
+            <h1 class="ml-4 font-bold text-xl sm:text-2xl">Total Liquidación Anual</h1>
+        </button>
+        <div class="flex items-center">
+            <p class="font-bold text-2xl">Total: $5.207,00</p>
+        </div>
+    </div>
+    <section class="flex flex-col items-end mt-1 w-full xl:w-10/12">
+        <!-- TOTAL IRPF ANUAL -->
+        <div id="DivMensualOff" class="rounded-xl shadow-lg py-1 px-2 flex justify-between mt-1 coloraz w-3/4">
+            <div class="items-center flex">
+                <h1 class="font-bold text-xl">IRPF</h1>
+            </div>
+            <div class="flex items-center">
+                <p class="font-bold text-xl">$3.124,20</p>
+            </div>
+        </div>
+                <!-- TOTAL FONANSA ANUAL -->
+    <div id="DivMensualOff" class="rounded-xl shadow-lg py-1 px-2 flex justify-between mt-1 coloraz w-3/4">
+        <div class="items-center flex">
+            <h1 class="font-bold text-xl">FONANSA</h1>
+        </div>
+        <div class="flex items-center">
+            <p class="font-bold text-xl">$1.041,00</p>
+        </div>
+    </div>
+            <!-- TOTAL IVA ANUAL -->
+            <div id="DivMensualOff" class="rounded-xl shadow-lg py-1 px-2 flex justify-between mt-1 coloraz w-3/4">
+                <div class="items-center flex">
+                    <h1 class="font-bold text-xl">IVA</h1>
+                </div>
+                <div class="flex items-center">
+                    <p class="font-bold text-xl">$1.041,00</p>
+                </div>
+            </div>
+</section>
