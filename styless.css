@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#marcoaz{
+    border: 1px solid #14213D;
+}
+
+#titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#A46CC4;
+
+}
+#crearcuenta{
+    background-color: #14213D;
+    color: white;
+}
+
+#ingresar{
+    background-color:white;
+    border: 1px solid #14213D;
+    color: #14213D;
+}
+
+.pelota{
+    background-color: #FCA311; 
+}
+#login{
+    color: #14213D;
+}
+
+.titulo_form{
+    color: #14213D;
+}
+#marco_am{
+    border: 1px solid #FCA311;
+
+}
+
+.placeholder{
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+}
+
+.botoningreso{
+    border: 1px solid #14213D;
+    background-color: #FCA311;
+    color: #14213D;
+    }
+
+.tituloslink{
+    color: #C4C4C4;
+}
+
+#headerDesk{
+    background-color: #14213D;
+    color: white;  
+}
+
+#LogoTitulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#A46CC4;
+}
+
+#headerOn{
+    background-color: #FCA311;
+    border: 1px solid #FCA311;
+}
+
+#NavDesk{
+    border-right: 1px solid #14213D;
+}
+.NavOn{
+    background-color: #14213D;
+    border-top: 2px solid #14213D;
+    color: #FCA311;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+}
+.NavOff{
+    border-top: 2px solid #14213D;
+    color: #14213D;
+}
+.NavOff:last-child{
+    border-bottom: 2px solid #14213D; 
+}
+
+#Tabla{
+    border: 1px solid #14213D;
+    border-collapse: collapse;
+}
+
+#TituloMes{
+    color: #14213D;
+}
+.TituloMesMobileTablet{
+    color: #14213D;
+}
+
+#Ven-DGI{
+    color: #FCA311;
+}
+
+#Ven-FONASA{
+    color: #A46CC4;
+}
+
+#DivIngresos{
+    color: #14213D;
+}
+
+.TitulosTabla{
+    border-bottom: 1px solid #14213D;
+    border-collapse: collapse;
+}
+
+td{
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.BBAgregar{
+    background-color: #14213D;
+    color: white;
+}
+
+#DivGastos{
+    color: #14213D;
+}
+
+.BEstimado{
+    background-color: #14213D;
+    color: white;
+}
+
+#EstiloCalendario{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.TituloCalendario{
+    color: #14213D;
+}
+
+.mespasado{
+    color: #C4C4C4;
+}
+
+.VencimientoDGI{
+    background-color: #FCA311;
+    border: 1px solid #14213D;
+}
+
+.VencimientoFONASA{
+    background-color: #A46CC4;
+    border: 1px solid #14213D;
+}
+.coloraz{
+    color:#14213D;
+}
+
+.coloram{
+    color: #FCA311;
+}
+
+/* Solo para ver hasta donde van los bordes en los divs
+hay que borrar esto despues */
+.bordesnegros{
+    border: 1px solid black;
+}
+
+#headerDesk{
+    height: 10vh;
+    min-height: 4rem;
+}
+
+#NavDesk{
+    height: 90vh;
+    min-height: auto;
+}
+
+#MainHeight{
+    height: 90vh;
+    min-height: auto;
+}
+
+/* Barra de pasos */
+.stepsRectangle {
+    background-color: rgba(20, 33, 61, 1);
+    color: rgba(20, 33, 61, 1);
+    border: 3px solid #FCA311;
+}
+
+/* Circulos de pasos */
+.stepsRound {
+    background-color: rgba(20, 33, 61, 1);
+    color: rgba(20, 33, 61, 1);
+    border: 3px solid #FCA311;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+/* Circulo paso activo */
+#stepOne {
+    background-color: rgba(252, 163, 17, 1);
+    color: rgba(20, 33, 61, 1);
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #14213D;
+}
+
+#stepTwo {
+    background-color: rgba(252, 163, 17, 1);
+    color: rgba(20, 33, 61, 1);
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #14213D;
+}
+
+#stepThree {
+    background-color: rgba(252, 163, 17, 1);
+    color: rgba(20, 33, 61, 1);
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid #14213D;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgba(20, 33, 61, 1);
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: rgba(20, 33, 61, 1);
+}
+
+.form {
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+/* cambiar a roboto mono pero no me aparece */
+.placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* cambiar a rubik pero no me aparece */
+.buttonNext {
+    background-color: rgba(252, 163, 17, 1);
+    border: 1px solid #14213D;
+    border-radius: 1.5rem;
+    color: rgba(20, 33, 61, 1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Registro 2 */
+
+/* cambiar a roboto mono pero no me aparece */
+.buttonsYesNo {
+    border: 1px solid rgba(20, 33, 61, 1);
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(20, 33, 61, 1);
+    font-weight: bold;
+} 
+
+/* Registro 3 */
+
+/* Barra de pasos */
+.noAplica {
+    border: 1px solid #464648;
+    border-radius: 4px;
+}
+
+/* Caja de los inputs */
+.form {
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Caja de boton agregar mas */
+.buttonPlus {
+    border: 1px solid #14213D;
+    border-radius: 10px;
+}
+
+/* cambiar a roboto mono pero no me aparece */
+.buttonsYesNo {
+    border: 1px solid rgba(20, 33, 61, 1);
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(20, 33, 61, 1);
+    font-weight: bold;
+}
+
+/* ingresos factura */
+
+/* header */
+.header {
+    background-color: #14213D;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* cambiar a rubik */
+.headerTitle {
+    color: #FCA311;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.findFile {
+    border: 1px dashed #000000;
+}
+
+.buttonCancel {
+    background-color: #FFFFFF;
+    border: 2px solid #FCA311;
+    border-radius: 1.5rem;
+    color: #FCA311;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttonAccept {
+    background-color: #14213D;
+    border: 2px solid #14213D;
+    border-radius: 1.5rem;
+    color: #FFFFFF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gastosDeducir {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #909090;
+}
+
+.buttonUploadFile {
+    background-color: #14213D;
+    border: 1px solid #14213D;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.75rem;
+}
+
+.uploadIcon {
+    font-size: 2rem;
+}
+
+/* cambiar a rubik el font */
+.taxDuckLetters {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #A46CC4;
+}
+
+.taxDuckSubline {
+    background-color: #FCA311;
+    border: 1px solid #FCA311;
+    margin-bottom: -0.450rem;
+}
+
+/* CSS Fori */
+#navDesk{
+    border: 1px solid #14213D;
+}
+
+.NavOn{
+    background-color: #14213D;
+    border-top: 1px solid #14213D;
+    color: #FCA311;
+}
+
+.NavOff{
+    border-top: 1px solid #14213D;
+    color: #14213D;
+}

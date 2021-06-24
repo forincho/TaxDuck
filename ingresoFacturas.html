@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link para CSS -->
+    <link rel="stylesheet" href="./styless.css"> 
+    <!-- link para tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- link para font awesome -->
+    <script src="https://kit.fontawesome.com/d70f434d57.js" crossorigin="anonymous"></script>
+    <title>Ingreso Facturas</title>
+</head>
+    
+<body>  
+    <!-- Contenedor -->
+    <div id="containerMainDesk" class="flex flex-wrap">
+
+            <!-- Header --> 
+        <header id="headerDesk" class="flex font-bold items-center justify-between w-full">
+            <!-- section que tiene logo y titulo -->
+            <section class="flex items-center w-auto pl-4 sm:w-4/12 h-full">
+                <button class="sm:hidden pr-4">
+                    <i class="fas fa-bars"></i>
+                </button>            
+                <button>
+                    <img class="h-16 lg:hidden" src="./assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
+                </button>
+                <button>
+                    <h1 id="LogoTitulo" class="hidden sm:inline text-3xl md:text-4xl pl-4">TaxDuck</h1>
+                </button>
+            </section>
+            <!-- titulo para Mobile -->
+            <h1 class="coloram text-4xl justify-self-center sm:hidden"><i class="fas fa-plus-circle pr-2"></i>INGRESO</h1>
+            <!-- Nav para tablet -->
+            <nav id="TabletNav" class="hidden sm:flex h-full justify-between w-8/12 pl-4 lg:hidden">
+                <div class="flex flex-col h-4/6 justify-between self-end">
+                    <button class="font-bold coloram self-center text-sm h-auto md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
+                    <span id="headerOn" class="w-full h-1/4 justify-end"></span>
+                </div>
+                <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
+                <button class="font-bold text-sm md:text-base">ESTIMADO</button>
+                <button class="font-bold text-sm md:text-base">PROYECCIONES</button>
+            </nav>
+            <nav class="hidden lg:inline-flex flex w-5/12 pr-8 justify-between items-center">
+                <button class="font-bold">INGRESOS</button>
+                <button class="font-bold">GASTOS</button>
+                <button class="font-bold">COMPROBANTES</button>
+                <button><i class="fas fa-ellipsis-v"></i></button>
+            </nav>  
+            <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
+        </header>
+
+            <!-- Navigation Desktop -->
+        <nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6">
+            <ul class="w-full">
+                <button class="flex justify-center w-full">
+                    <img class="h-32 mt-4 mb-8" src="./assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
+                </button>    
+                <li class="NavOff flex items-center justify-center font-bold text-base h-14 xl:text-xl">
+                    <button class="w-full h-full font-bold">HOME</button>
+                </li>
+                <li class="NavOn flex items-center justify-center text-base h-14 xl:text-xl">
+                    <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+                </li>
+                <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+                    <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+                </li>
+                <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+                <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+                </li>
+                <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+                <button class="font-bold w-full h-full">PROYECCIONES</button>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="MainHeight" class="w-11/12 flex flex-col items-center md:w-8/12 lg:w-3/6 mx-auto">
+            <!-- Modulo subir facturas -->
+            <div class="findFile w-11/12 mx-auto mt-4 h-24 flex flex-wrap justify-center items-center   sm:w-10/12 h-32">
+                <button> 
+                    <i class="uploadIcon fas fa-upload mb-2"></i>
+                    <div class="buttonUploadFile">Buscar un archivo</div>
+                </button>
+                <div class="hidden   sm:flex w-full justify-center">O</div>
+                <div class="hidden   sm:flex w-full justify-center">Arrastra un archivo hasta aqui</div>
+            </div>
+            
+            <!-- Modulo formularios -->
+            <div class="w-11/12 mx-auto flex flex-wrap justify-between   sm:w-10/12">
+                <div class="formIng w-full mt-4 h-2/12   sm:w-5/12 mr-auto order-1">
+                    <!-- Titulo N° de Factura-->
+                    <div class="secondaryTitle w-full mx-2">
+                        <h2>N° de Factura</h2>
+                    </div>
+                    <!-- Input N° de Factura -->
+                    <div class="form w-full h-8">
+                        <input class= "mx-4" type="text" placeholder="N° de factura...">
+                    </div>
+                </div>
+
+                <div class="formIng w-full mt-4 h-2/12   sm:w-5/12 ml-auto order-2">
+                    <!-- Titulo Fecha-->
+                    <div class="secondaryTitle w-full mx-2">
+                        <h2>Fecha</h2>
+                    </div>
+                    <!-- Input Nombre -->
+                    <div class="form w-full h-8">
+                        <input class= "mx-4" type="date" placeholder="dd/mm/aaaa">
+                    </div>
+                </div>
+
+                <div class="formIng w-full mt-4 h-2/12    sm:w-5/12 mr-auto order-3">
+                    <!-- Titulo Concepto-->
+                    <div class="secondaryTitle w-full mx-2">
+                        <h2>Concepto</h2>
+                    </div>
+                    <!-- Input Concepto-->
+                    <div class="form w-full h-8">
+                        <input class= "mx-4" type="text" placeholder="Concepto...">
+                    </div>
+                </div>
+                
+                <div class="formIng w-full mt-4 h-2/12    sm:w-5/12 mr-auto order-5">
+                    <!-- Titulo Monto Total-->
+                    <div class="secondaryTitle w-full mx-2">
+                        <h2>Monto Total</h2>
+                    </div>
+                    <!-- Input Monto Total-->
+                    <div class="form w-full h-8">
+                        <input class= "mx-4" type="text" placeholder="Monto Total...">
+                    </div> 
+                </div>
+
+                <!-- Botones de moneda -->
+                <div class="formIng w-full h-1/12   sm:w-5/12 h-2/12 mt-4 order-4">
+                    <!-- Titulo Moneda-->
+                    <div class="secondaryTitle hidden   sm:flex w-full mx-2">
+                        <h2>Moneda</h2>
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <button class="buttonsYesNo w-1/2 mr-2">Pesos</button>
+                        <button class="buttonsYesNo w-1/2 ml-2">Dólares</button>
+                    </div> 
+                </div>    
+
+                <div class="formIng w-full h-2/12 sm:w-5/12 mt-4 order-6">
+                    <!-- Titulo Retención de IRPF-->
+                    <div class="secondaryTitle w-full mx-2">
+                        <h2>Retención de IRPF</h2>
+                    </div>
+                    <!-- Botones Retención de IRPF-->
+                    <div class="w-full flex justify-center">
+                        <button class="buttonsYesNo w-1/2 mr-2">No</button>
+                        <button class="buttonsYesNo w-1/2 ml-2">Si</button>
+                    </div>  
+                </div>
+            </div>
+
+            <!-- Boton Cancelar -->
+            <div class="buttonCancel shadow-lg w-11/12 mt-4 mx-auto   sm:w-10/12"> 
+                <button>CANCELAR</button>
+            </div>
+
+            <!-- Boton Aceptar -->
+            <div class="buttonAccept shadow-lg w-11/12 my-4 mx-auto  sm:w-10/12"> 
+                <button>ACEPTAR</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
