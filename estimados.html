@@ -14,7 +14,7 @@
 <!-- link para font awesome -->
 <script src="https://kit.fontawesome.com/d70f434d57.js" crossorigin="anonymous"></script>
 
-<title>INGRESOS</title>
+<title>Calcular Estimados</title>
 </head>
 <body>
 <!-- Contenedor -->
@@ -34,19 +34,19 @@
         </button>
     </section>
     <!-- titulo para Mobile -->
-    <h1 class="coloram text-4xl justify-self-center sm:hidden">INGRESOS</h1>
+    <h1 class="coloram text-4xl justify-self-center sm:hidden">ESTIMADO</h1>
     <!-- Nav para tablet -->
-    <nav id="TabletNav" class="hidden sm:flex justify-between w-8/12 pl-4 lg:hidden">
+    <nav id="TabletNav" class="hidden h-full sm:flex justify-between w-8/12 pl-4 lg:hidden">
         <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
         <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
-        <button class="font-bold text-sm md:text-base">ESTIMADO</button>
+        <div class="flex h-full flex flex-col justify-end">
+            <button class="font-bold flex-wrap h-3/5 self-center coloram w-auto">ESTIMADO</button>
+            <div class="bkgam h-1/5 w-full"></div>
+        </div>
         <button class="font-bold text-sm md:text-base">PROYECCIONES</button>
     </nav>
     <nav class="hidden lg:inline-flex h-full flex w-5/12 pr-8 justify-between items-center">
-        <div class="flex h-full flex flex-col justify-end">
-            <button class="font-bold flex-wrap h-3/5 self-center coloram w-auto">INGRESOS</button>
-            <div class="bkgam h-1/5 w-full"></div>
-        </div>
+        <button class="font-bold">INGRESOS</button>
         <button class="font-bold">GASTOS</button>
         <button class="font-bold">COMPROBANTES</button>
         <button><i class="fas fa-ellipsis-v"></i></button>
@@ -68,7 +68,7 @@
         <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
             <button class="font-bold w-full h-full">AGREGAR GASTO</button>
         </li>
-        <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
+        <li class="NavOn flex items-center justify-center text-base h-14 xl:text-xl">
         <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
         </li>
         <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
@@ -76,29 +76,15 @@
         </li>
     </ul>
 </nav>
-<main class="mt-4 mx-auto w-11/12 flex flex-col md:w-8/12 lg:w-3/6">
-    <!-- Total ANUAL -->
-    <div class="flex justify-between coloraz">
-        <button class="px-4 border-gray-600 border rounded-xl items-center flex">
-            <h1 class=" font-bold text-4xl">2021</h1>
-            <i class="ml-2 fas fa-caret-down text-5xl "></i>
-        </button>
-        <div class="flex items-center">
-            <p id="total_anual" class=" font-bold text-4xl">Total: $97.857,00</p>
-        </div>
-    </div>
-    <!-- DIV MENSUAL ON -->
-    <div class="bkgaz rounded-xl shadow-lg p-4 flex justify-between mt-4 coloram">
-        <button class="items-center flex">
-            <i class="fas fa-caret-down text-5xl "></i>
-            <h1 class="ml-4 font-bold text-3xl">Junio</h1>
-        </button>
-        <div class="flex items-center">
-            <p id="TotalMesOn" class=" font-bold text-3xl">Total: $11.355,00</p>
-        </div>
+<main class="mt-4 mx-auto w-11/12 flex flex-col items-center md:w-8/12 lg:w-3/6">
+    <h1 class="text-4xl coloraz font-bold border-bottom-az">MONTOS JUNIO</h1>
+    <!-- Titulos Tabla Ingresos -->
+    <div class="coloraz mt-8 flex justify-between w-10/12 font-bold text-xl xl:text-2xl">
+        <h2>Ingresos</h2>
+        <h2>Total: $11,355.00</h2>
     </div>
     <!-- Tabla Ingresos -->
-    <table id="Tabla" class="coloraz mt-2 text-xs self-end text-center w-11/12 shadow-lg">
+    <table id="Tabla" class="coloraz text-xs text-center w-10/12 shadow-lg">
         <thead>
             <tr class="TitulosTabla coloraz h-6">
                 <th class="pl-2 align-bottom"><input type="checkbox"></th>
@@ -144,51 +130,60 @@
             </tr>
         </tbody>
     </table>
-    <!-- DIVS MENSUALES OFF -->
-    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
-        <button class="items-center flex">
-            <i class="fas fa-caret-right text-5xl"></i>
-            <h1 class="ml-4 font-bold text-3xl">Mayo</h1>
-        </button>
-        <div class="flex items-center">
-            <p class="border-bottom-az font-bold text-3xl">Total: $17.035,00</p>
-        </div>
+    <!-- Titulo Tabla Gastos -->
+    <div class="coloraz mt-8 flex justify-between items-end w-10/12 font-bold text-xl xl:text-2xl">
+                <h2>Gastos</h2>
+                <h2>Total: $10,649.00</h2>
     </div>
-    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
-        <button class="items-center flex">
-            <i class="fas fa-caret-right text-5xl"></i>
-            <h1 class="ml-4 font-bold text-3xl">Abril</h1>
-        </button>
-        <div class="flex items-center">
-            <p class="border-bottom-az font-bold text-3xl">Total: $22.255,00</p>
-        </div>
-    </div>
-    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
-        <button class="items-center flex">
-            <i class="fas fa-caret-right text-5xl"></i>
-            <h1 class="ml-4 font-bold text-3xl">Marzo</h1>
-        </button>
-        <div class="flex items-center">
-            <p class="border-bottom-az font-bold text-3xl">Total: $16.432,00</p>
-        </div>
-    </div>
-    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
-        <button class="items-center flex">
-            <i class="fas fa-caret-right text-5xl"></i>
-            <h1 class="ml-4 font-bold text-3xl">Febrero</h1>
-        </button>
-        <div class="flex items-center">
-            <p class="border-bottom-az font-bold text-3xl">Total: $21.573,00</p>
-        </div>
-    </div>
-    <div id="DivMensualOff" class="rounded-xl shadow-lg p-4 flex justify-between mt-4 coloraz">
-        <button class="items-center flex">
-            <i class="fas fa-caret-right text-5xl"></i>
-            <h1 class="ml-4 font-bold text-3xl">Enero</h1>
-        </button>
-        <div class="flex items-center">
-            <p class="border-bottom-az font-bold text-3xl">Total: $9.207,00</p>
-        </div>
+    <!-- Tabla Gastos -->
+    <table id="Tabla" class="coloraz text-xs text-center w-10/12 shadow-lg">
+                <thead>
+                    <tr class="TitulosTabla mt-4 h-6">
+                        <th class="pl-2"><input type="checkbox"></th>
+                        <th class="pl-2 xl:text-base">Fecha</th>
+                        <th class="pl-2 xl:text-base">Concepto</th>
+                        <th class="px-2 xl:text-base">Monto IVA</th>
+                        <th class="px-2 xl:text-base">Estado</th>
+                        <th class="px-2 xl:text-base">Documento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="h-8">
+                        <td class="pl-2"><input type="checkbox"></td>
+                        <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                        <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                        <td class=" w-auto xl:text-base">$3,255.00</td>
+                        <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
+                        <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                    </tr>
+                    <tr class="h-8">
+                        <td class="pl-2"><input type="checkbox"></td>
+                        <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                        <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                        <td class=" w-auto xl:text-base">$3,255.00</td>
+                        <td class="px-2 text-left text-red-500 xl:text-base">Rechazada</td>
+                        <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                    </tr>
+                    <tr class="h-8">
+                        <td class="pl-2"><input type="checkbox"></td>
+                        <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                        <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                        <td class=" w-auto xl:text-base">$3,255.00</td>
+                        <td class="px-2 text-left xl:text-base">Aprovada</td>
+                        <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                    </tr>
+                    <tr class="h-8">
+                        <td class="pl-2"><input type="checkbox"></td>
+                        <td class="xl:px-2 xl:text-base">12/06/2021</td>
+                        <td class=" px-2 text-xs text-left xl:text-base">Implement</td>
+                        <td class=" w-auto xl:text-base">$3,255.00</td>
+                        <td class=" px-2 text-left xl:text-base">Pendiente</td>
+                        <td class=" text-red-500"><i class="far fa-file-pdf"></i></td>
+                    </tr>              
+                </tbody>
+    </table>
+    <!-- Boton Calcular Estimado -->
+    <div class="BEstimado rounded-lg mt-8 h-10 shadow-lg w-8/12 lg:w-6/12">
+        <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
     </div>
 </main>
-

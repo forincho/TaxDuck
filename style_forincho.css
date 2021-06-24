@@ -64,6 +64,8 @@
     background-color: #14213D;
     border-top: 2px solid #14213D;
     color: #FCA311;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .NavOff{
     border-top: 2px solid #14213D;
@@ -164,6 +166,6 @@ hay que borrar esto despues */
     border: 2px solid #C4C4C4;
 }
 
-#TotalMesOff{
+.border-bottom-az{
     border-bottom: 2px solid #14213D;
 }
