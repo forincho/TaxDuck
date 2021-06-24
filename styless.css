@@ -77,6 +77,9 @@
     background-color: #14213D;
     border-top: 2px solid #14213D;
     color: #FCA311;
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 }
 .NavOff{
     border-top: 2px solid #14213D;
@@ -176,6 +179,11 @@ hay que borrar esto despues */
 }
 
 #NavDesk{
+    height: 90vh;
+    min-height: auto;
+}
+
+#MainHeight{
     height: 90vh;
     min-height: auto;
 }
@@ -344,6 +352,13 @@ h2 {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
+}
+
+.gastosDeducir {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #909090;
 }
 
 .buttonUploadFile {
