@@ -31,10 +31,8 @@
     background-color: #FCA311; 
 }
 
-#marco_am{
-    border: 1px solid #FCA311;
-    height: 99vh;
-
+.marco_am{
+    border-color:#FCA311;
 }
 
 .placeholder{
