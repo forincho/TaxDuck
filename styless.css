@@ -35,9 +35,8 @@
 .titulo_form{
     color: #14213D;
 }
-#marco_am{
-    border: 1px solid #FCA311;
-
+.marco_am{
+    border-color: #FCA311;
 }
 
 .placeholder{
@@ -200,29 +199,13 @@ hay que borrar esto despues */
     background-color: rgba(20, 33, 61, 1);
     color: rgba(20, 33, 61, 1);
     border: 3px solid #FCA311;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
 }
 
 /* Circulo paso activo */
-#stepOne {
-    background-color: rgba(252, 163, 17, 1);
-    color: rgba(20, 33, 61, 1);
-    font-weight: bold;
-    text-align: center;
-    border: 3px solid #14213D;
-}
-
-#stepTwo {
-    background-color: rgba(252, 163, 17, 1);
-    color: rgba(20, 33, 61, 1);
-    font-weight: bold;
-    text-align: center;
-    border: 3px solid #14213D;
-}
-
-#stepThree {
+#stepNumber {
     background-color: rgba(252, 163, 17, 1);
     color: rgba(20, 33, 61, 1);
     font-weight: bold;
