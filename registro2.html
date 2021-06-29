@@ -16,7 +16,7 @@
     <div class="container marco_am w-11/12 h-full flex flex-wrap mx-auto border-0   sm:w-8/12 sm:border rounded-2xl  md:w-7/12   lg:w-1/2   xl:w-2/5">
 
         <!-- Barra de pasos -->
-        <div class="stepsBar w-10/12 h-2/12 mx-auto flex justify-center items-center relative">
+        <div class="stepsBar w-10/12 mt-5 mx-auto flex justify-center items-center relative">
             <!-- Rectangulo barra de pasos -->
             <div class="stepsRectangle w-11/12 h-6 m-auto flex absolute z-0"></div>
             <!-- Circulos de barra de pasos -->
@@ -28,68 +28,65 @@
         </div>
 
         <!-- Modulo formularios -->
-        <div class="flex flex-wrap items-around">
-                <!-- Titulo principal -->
-            <div class="mainTitle w-10/12 h-2/12 mx-auto">
-                <h1 class="">¿A que te dedicas?</h1>
-            </div>
+            <!-- Titulo principal -->
+        <div class="w-10/12 mt-6 mx-auto">
+            <h1 class="">¿A que te dedicas?</h1>
+        </div>
 
-            <div class="formIng w-9/12 h-1/12 mx-auto">
-                <!-- Titulo Ocupacion-->
-                <div class="secondaryTitle w-full mx-2">
-                    <h2>Ocupación</h2>
-                </div>
-                <!-- Lista desplegable ocupacion-->
-                <div class="form w-full h-8">
-                    <input class="mx-4" type="text" placeholder="Marque su ocupación">
-                </div>
+        <div class="w-9/12 mx-auto">
+            <!-- Titulo Ocupacion-->
+            <div class="w-full">
+                <h2 class="coloraz text-lg font-bold">Ocupación</h2>
             </div>
-
-            <div class="formIng w-9/12 h-1/12 mx-auto">
-                <!-- Titulo N° de RUT-->
-                <div class="secondaryTitle w-full mx-2">
-                    <h2>N° de Documento</h2>
-                </div>
-                <!-- Input N° de RUT-->
-                <div class="form w-full h-8">
-                    <input class= "mx-4" type="text" placeholder="Ingresar N° de RUT... ">
-                </div>
-            </div>
-
-            <div class="formIng w-9/12 h-1/12 mx-auto">
-                <!-- Titulo N° de Empresa BPS-->
-                <div class="secondaryTitle w-full mx-2">
-                    <h2>N° de Empresa BPS</h2>
-                </div>
-                <!-- Titulo N° de Empresa BPS-->
-                <div class="form w-full h-8">
-                    <input class= "mx-4" type="text" placeholder="Ingresar N° Empresa BPS...">
-                </div>
-            </div>
-
-            <div class="formIng w-9/12 h-2/12 mx-auto">
-                <!-- Titulo Cobertura FONASA-->
-                <div class="secondaryTitle w-full mx-2">
-                    <h2>Cubierto por Fonasa por esta empresa</h2>
-                </div>
-                <!-- Botones Cobertura FONASA-->
-                <div class="w-full flex justify-center">
-                    <button class="buttonsYesNo w-1/2 mr-2">Si</button>
-                    <button class="buttonsYesNo w-1/2 ml-2">No</button>
-                </div>  
-            </div>
-
-            <!-- Boton siguiente paso -->
-            <div class="bordesnegros buttonNext w-9/12 h-8 mt-2 mx-auto shadow-lg flex justify-center items-center"> 
-                <button>AL ÚLTIMO PASO</button>
-            </div>
-
-            <!-- Logo -->
-            <div class="logo w-full h-3/12 flex justify-center items-center">
-                <img class="w-1/4 h-5/6" src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la aplicacion">
+            <!-- Lista desplegable ocupacion-->
+            <div class="w-full">
+                <input class="placeholder pl-4 text-lg h-12 w-full font-mono font-bold" type="text" placeholder="Marque su ocupación">
             </div>
         </div>
+
+        <div class="w-9/12 mx-auto">
+            <!-- Titulo N° de RUT-->
+            <div class="w-full">
+                <h2 class="coloraz text-lg font-bold">N° de Documento</h2>
+            </div>
+            <!-- Input N° de RUT-->
+            <div class="w-full">
+                <input class="placeholder pl-4 text-lg h-12 w-full font-mono font-bold" type="text" placeholder="Ingresar N° de RUT... ">
+            </div>
+        </div>
+
+        <div class="w-9/12 mx-auto">
+            <!-- Titulo N° de Empresa BPS-->
+            <div class="w-full">
+                <h2 class="coloraz text-lg font-bold">N° de Empresa BPS</h2>
+            </div>
+            <!-- Titulo N° de Empresa BPS-->
+            <div class="w-full">
+                <input class="placeholder pl-4 text-lg h-12 w-full font-mono font-bold" type="text" placeholder="Ingresar N° Empresa BPS...">
+            </div>
+        </div>
+
+        <div class="formIng w-9/12 mx-auto">
+            <!-- Titulo Cobertura FONASA-->
+            <div class="w-full">
+                <h2 class="coloraz text-lg font-bold">Cubierto por Fonasa por esta empresa</h2>
+            </div>
+            <!-- Botones Cobertura FONASA-->
+            <div class="w-full flex justify-center">
+                <button class="buttonsYesNo w-1/2 h-12 mr-2">Si</button>
+                <button class="buttonsYesNo w-1/2 h-12 ml-2">No</button>
+            </div>  
+        </div>
+
+        <!-- Boton siguiente paso -->
+        <div class="buttonNext w-9/12 h-12 mt-2 mx-auto shadow-lg flex justify-center items-center"> 
+            <button>AL ÚLTIMO PASO</button>
+        </div>
+
+        <!-- Logo -->
+        <div class="logo w-full flex justify-center items-center">
+            <img class="h-36" src="./assets/pato amarillo sin fondo.png" alt="Logo del pato de la aplicacion">
+        </div>
     </div>
-        
 </body>
 </html>
