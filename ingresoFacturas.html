@@ -17,59 +17,58 @@
     <!-- Contenedor -->
     <div id="containerMainDesk" class="flex flex-wrap">
 
-            <!-- Header --> 
-        <header id="headerDesk" class="flex font-bold items-center justify-between w-full">
-            <!-- section que tiene logo y titulo -->
-            <section class="flex items-center w-auto pl-4 sm:w-4/12 h-full">
-                <button class="sm:hidden pr-4">
-                    <i class="fas fa-bars"></i>
-                </button>     
-                <button>
-                    <a href="./Main.html" class="h-full w-full">
-                    <img class="h-16 lg:hidden" src="./Assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
-                    </a>
-                </button>
-                <button class="h-full">
-                <a href="./Main.html" class="w-full">
-                    <h1 id="LogoTitulo" class="hidden h-1/5 w-full colorvio sm:inline text-3xl md:text-4xl lg:h-3/5">
-                            TaxDuck
-                        </h1>
-                </a>
-                </button>
-            </section>
-            <!-- titulo para Mobile -->
-            <h1 class="coloram text-4xl justify-self-center sm:hidden"><i class="fas fa-plus-circle pr-2"></i>INGRESO</h1>
-            <!-- Nav para tablet -->
-            <nav id="TabletNav" class="hidden   sm:flex h-full justify-between w-8/12 pl-4 lg:hidden">
-                <div class="flex flex-col h-4/6 justify-between self-end">
-                    <button class="font-bold coloram self-center text-sm h-auto md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
-                    <span id="headerOn" class="w-full h-1/4 justify-end"></span>
-                </div>
-                <a href="./gastoFacturas.html" class="h-full">
-                    <button class="font-bold text-sm md:text-base h-full"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
-                </a>
-                <a href="./estimados.html" class="h-full">
-                    <button class="font-bold text-sm h-full md:text-base">ESTIMADO</button>
-                </a>
-                <a href="./proyeccion.html" class="h-full">
-                    <button class="font-bold text-sm h-full md:text-base">PROYECCIONES</button>
-                </a>                
-            </nav>
-            <nav class="hidden lg:inline-flex flex w-5/12 pr-8 h-full justify-between items-center">
-                <a href="./ingresos.html" class="h-full">
-                    <button class="font-bold h-full">INGRESOS</button>
-                </a>
-                <a href="./gastos.html" class="h-full">
-                    <button class="font-bold h-full">GASTOS</button>
-                </a>
-                <a href="./comprobantes.html" class="h-full">
-                    <button class="font-bold h-full">COMPROBANTES</button>
-                </a>
-                <button><i class="fas fa-ellipsis-v"></i></button>
-            </nav>  
-            <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
+    <!-- Header --> 
+<header id="headerDesk" class="flex font-bold items-center justify-between w-full">
+    <!-- section que tiene logo y titulo -->
+    <section class="flex items-center w-auto pl-4 sm:w-4/12 h-full">
+        <button class="sm:hidden pr-4">
+            <i class="fas fa-bars"></i>
+        </button>     
+        <button>
+            <a href="./Main.html" class="h-full w-full">
+            <img class="h-16 lg:hidden" src="./Assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
+            </a>
+        </button>
+        <button class="h-full">
+        <a href="./Main.html" class="w-full">
+            <h1 id="LogoTitulo" class="hidden h-1/5 w-full colorvio sm:inline text-3xl md:text-4xl lg:h-3/5">
+                    TaxDuck
+            </h1>
+        </a>
+        </button>
+    </section>
+    <!-- titulo para Mobile -->
+    <h1 class="coloram text-4xl justify-self-center sm:hidden"><i class="fas fa-plus-circle pr-2"></i>INGRESO</h1>
+    <!-- Nav para tablet -->
+    <nav id="TabletNav" class="hidden   sm:flex h-full justify-between w-8/12 pl-4 lg:hidden">
+        <a href="./ingresoFacturas.html" class="flex flex-col h-4/6 justify-between self-end">
+            <button class="font-bold coloram self-center text-sm h-auto md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
+            <span id="headerOn" class="w-full h-1/4 justify-end"></span>
+        </a>
+        <a href="./gastoFacturas.html" class="h-full">
+            <button class="font-bold text-sm md:text-base h-full"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
+        </a>
+        <a href="./estimados.html" class="h-full">
+            <button class="font-bold text-sm h-full md:text-base">ESTIMADO</button>
+        </a>
+        <a href="./proyeccion.html" class="h-full">
+            <button class="font-bold text-sm h-full md:text-base">PROYECCIONES</button>
+        </a>
+    </nav>
+    <nav class="hidden lg:inline-flex flex w-5/12 pr-8 h-full justify-between items-center">
+        <a href="./ingresos.html" class="h-full">
+            <button class="font-bold h-full">INGRESOS</button>
+        </a>
+        <a href="./gastos.html" class="h-full">
+            <button class="font-bold h-full">GASTOS</button>
+        </a>
+        <a href="./comprobantes.html" class="h-full">
+            <button class="font-bold h-full">COMPROBANTES</button>
+        </a>
+        <button><i class="fas fa-ellipsis-v"></i></button>
+    </nav>  
+    <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
         </header>
-
     <!-- Navigation Desktop -->
     <nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6">
         <ul class="w-full">
@@ -105,8 +104,7 @@
             </li>
         </ul>
     </nav>
-
-        <main id="MainHeight" class="w-11/12 flex flex-col items-center md:w-8/12 lg:w-3/6 mx-auto">
+    <main id="MainHeight" class="w-11/12 flex flex-col items-center md:w-8/12 lg:w-3/6 mx-auto">
             <!-- Modulo subir facturas -->
             <div class="findFile w-11/12 mx-auto mt-4 h-24 flex flex-wrap justify-center items-center   sm:w-10/12 h-32 mt-12">
                 <button> 
@@ -189,14 +187,14 @@
             </div>
 
             <!-- Boton Cancelar -->
-            <div class="buttonCancel shadow-lg w-11/12 h-12 mt-12 mx-auto   sm:w-10/12"> 
+            <a href="./ingresoFacturas.html" class="buttonCancel flex items-center justify-center shadow-lg w-11/12 h-12 mt-12 mx-auto   sm:w-10/12"> 
                 <button class="font-bold">CANCELAR</button>
-            </div>
+            </a>
 
             <!-- Boton Aceptar -->
-            <div class="buttonAccept shadow-lg w-11/12 h-12 mt-12 mx-auto  sm:w-10/12"> 
+            <a href="./ingresos.html" class="buttonAccept shadow-lg flex items-center justify-center w-11/12 h-12 mt-12 mx-auto  sm:w-10/12"> 
                 <button class="font-bold">ACEPTAR</button>
-            </div>
+            </a>
         </main>
     </div>
 </body>
