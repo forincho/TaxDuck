@@ -4,71 +4,41 @@
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-#marcoaz{
+.marcoaz{
     border: 1px solid #14213D;
 }
-
 #titulo{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#A46CC4;
-
 }
-#crearcuenta{
-    background-color: #14213D;
-    color: white;
-}
-
-#ingresar{
-    background-color:white;
-    border: 1px solid #14213D;
-    color: #14213D;
-}
-
 .pelota{
     background-color: #FCA311; 
-}
-#login{
-    color: #14213D;
-}
-
-.titulo_form{
-    color: #14213D;
 }
 .marco_am{
     border-color: #FCA311;
 }
-
 .placeholder{
     border: 1px solid #C4C4C4;
     border-radius: 8px;
 }
-
 .botoningreso{
     border: 1px solid #14213D;
     background-color: #FCA311;
-    color: #14213D;
-    }
-
+}
 .tituloslink{
     color: #C4C4C4;
 }
-
 #headerDesk{
     background-color: #14213D;
     color: white;  
 }
-
 #LogoTitulo{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#A46CC4;
 }
-
 #headerOn{
     background-color: #FCA311;
     border: 1px solid #FCA311;
 }
-
 #NavDesk{
     border-right: 1px solid #14213D;
 }
@@ -79,7 +49,6 @@
     --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
 .NavOff{
     border-top: 2px solid #14213D;
     color: #14213D;
@@ -87,73 +56,35 @@
 .NavOff:last-child{
     border-bottom: 2px solid #14213D; 
 }
-
 #Tabla{
     border: 1px solid #14213D;
     border-collapse: collapse;
 }
-
-#TituloMes{
-    color: #14213D;
-}
-.TituloMesMobileTablet{
-    color: #14213D;
-}
-
-#Ven-DGI{
-    color: #FCA311;
-}
-
-#Ven-FONASA{
-    color: #A46CC4;
-}
-
-#DivIngresos{
-    color: #14213D;
-}
-
 .TitulosTabla{
     border-bottom: 1px solid #14213D;
     border-collapse: collapse;
 }
-
 td{
     border-bottom: 1px solid #C4C4C4;
 }
-
 .BBAgregar{
     background-color: #14213D;
     color: white;
-}
-
-#DivGastos{
-    color: #14213D;
 }
 
 .BEstimado{
     background-color: #14213D;
     color: white;
 }
-
 #EstiloCalendario{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
-
-.TituloCalendario{
-    color: #14213D;
-}
-
-.mespasado{
-    color: #C4C4C4;
-}
-
 .VencimientoDGI{
     background-color: #FCA311;
     border: 1px solid #14213D;
 }
-
 .VencimientoFONASA{
     background-color: #A46CC4;
     border: 1px solid #14213D;
@@ -161,22 +92,44 @@ td{
 .coloraz{
     color:#14213D;
 }
-
 .coloram{
     color: #FCA311;
 }
+.colorgr{
+    color: #C4C4C4;
+}
 
+.colorvio{
+    color: #A46CC4;
+}
+#total_anual{
+    border-bottom: 2px solid #14213D;
+}
+
+#TotalMesOn{
+    border-bottom: 2px solid #FCA311;
+}
+.bkgaz{
+    background-color: #14213D;
+}
+.bkgam{
+    background-color: #FCA311;
+}
+#DivMensualOff{
+    border: 2px solid #C4C4C4;
+}
+.border-bottom-az{
+    border-bottom: 2px solid #14213D;
+}
 /* Solo para ver hasta donde van los bordes en los divs
 hay que borrar esto despues */
 .bordesnegros{
     border: 1px solid black;
 }
-
 #headerDesk{
     height: 10vh;
     min-height: 4rem;
 }
-
 #NavDesk{
     height: 90vh;
     min-height: auto;

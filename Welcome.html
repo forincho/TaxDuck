@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- link para CSS -->
-    <link rel="stylesheet" href="./style_forincho.css">
+    <link rel="stylesheet" href="./styless.css">
     
     <!-- link para tailwind -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Titulo de la pagina -->
-    <title>WELCOME</title>
+    <title>Welcome</title>
 </head>
-<body>  
-<!-- contenedor principal -->
-<main class= "flex flex-col mx-auto items-center justify-center h-screen w-10/12">
-<!-- marco -->
-    <div id="marcoaz" class="hidden rounded-2xl absolute sm:block w-9/12 md:w-7/12 lg:w-5/12"></div>
-<!-- Logo del pato -->
-    <div class="w-full flex justify-center mb-4">
-        <img src="/Assets/pato amarillo sin fondo.png" alt="Logo_TaxDuck_Pato_Amarillo">
+<body class="py-4 h-screen">  
+    <!-- Contenedor Principal -->
+<main class="container marcoaz w-11/12 h-full mx-auto flex flex-col justify-center items-center border-0 sm:w-8/12 sm:border rounded-2xl md:w-7/12 lg:w-1/2 xl:w-2/5">
+    <!-- Logo del pato -->
+    <div class="w-full flex justify-center ">
+        <img src="/Assets/pato_amarillo_sin_fondo.png" alt="Logo_TaxDuck_Pato_Amarillo">
     </div>
-<!-- Titulo principal -->
-    <h1 id="titulo" class="text-6xl w-full flex justify-center mb-8">TaxDuck</h1>
-<!-- Boton Crear cuenta -->
-    <div class="w-full flex justify-center mb-2">
-        <button id="crearcuenta" class="font-bold h-8 w-80 rounded-2xl">CREAR CUENTA</button>
-    </div>
-<!-- Boton Ingresar -->
-    <div class="w-full flex justify-center">
-        <button  id="ingresar" class="coloraz font-bold h-8 w-80 rounded-2xl">INGRESAR</button>
-    </div>
+    <!-- Titulo principal -->
+    <h1 id="titulo" class=" mb-4 text-6xl w-full flex justify-center">TaxDuck</h1>
+    <!-- Boton Crear cuenta -->
+    <a href="./registarse.html">    
+    <button class="font-bold w-80 bkgaz text-white h-12 rounded-2xl  mb-2 flex items-center justify-center">
+            CREAR CUENTA
+        </button></a>
+    <!-- Boton Ingresar -->
+    <a href="./ingresar.html">    
+    <button class="font-bold w-80 h-12 coloraz marcoaz flex items-center justify-center rounded-2xl ">
+            INGRESAR
+        </button></a>
 </main>
+
 </body>
 </html>

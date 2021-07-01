@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- link para CSS -->
-<link rel="stylesheet" href="./style_forincho.css">
+<link rel="stylesheet" href="./styless.css">
     
     <!-- link para tailwind -->
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -28,30 +28,48 @@
                 <i class="fas fa-bars"></i>
             </button>     
             <button>
-                <img class="h-16 lg:hidden" src="./Assets/pato amarillo sin fondo.png" alt="Logo_Pato_TaxDuck">
+                <a href="./main.html" class="h-full w-full">
+                <img class="h-16 lg:hidden" src="./Assets/pato_amarillo_sin_fondo.png" alt="Logo_Pato_TaxDuck">
+                </a>
             </button>
             <button class="h-full">
-            <div class="pl-2 h-full flex flex-wrap items-center">
-                    <h1 id="LogoTitulo" class="hidden flex h-1/5 w-full colorvio sm:inline text-3xl md:text-4xl lg:h-3/5">
+            <a href="./main.html" class="w-full">
+                <div class="pl-2 h-full flex flex-wrap items-center">
+                    <h1 id="LogoTitulo" class="hidden align-middle h-1/5 w-full colorvio sm:inline text-3xl md:text-4xl lg:h-3/5">
                         TaxDuck
                     </h1>
                     <div class="hidden sm:block self-end h-1/5 bkgam w-full lg:hidden"></div>
                 </div>
+            </a>
             </button>
         </section>
         <!-- titulo para Mobile -->
         <h1 class="coloram text-4xl justify-self-center sm:hidden">HOME</h1>
         <!-- Nav para tablet -->
-        <nav id="TabletNav" class="hidden sm:flex justify-between w-8/12 pl-4 lg:hidden">
-            <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
-            <button class="font-bold text-sm md:text-base"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
-            <button class="font-bold text-sm md:text-base">ESTIMADO</button>
-            <button class="font-bold text-sm md:text-base">PROYECCIONES</button>
+        <nav class="hidden h-full sm:flex justify-between items-center w-8/12 pl-4 lg:hidden">
+            <a href="./ingresoFacturas.html" class="h-full">
+                <button class="font-bold text-sm md:text-base h-full"><i class="fas fa-plus-circle pr-2"></i>INGRESOS</button>
+            </a>
+            <a href="./gastoFacturas.html" class="h-full">
+                <button class="font-bold text-sm md:text-base h-full"><i class="fas fa-plus-circle pr-2"></i>GASTOS</button>
+            </a>
+            <a href="./estimados.html" class="h-full">
+                <button class="font-bold text-sm h-full md:text-base">ESTIMADO</button>
+            </a>
+            <a href="./proyeccion.html" class="h-full">
+                <button class="font-bold text-sm h-full md:text-base">PROYECCIONES</button>
+            </a>
         </nav>
-        <nav class="hidden lg:inline-flex flex w-5/12 pr-8 justify-between items-center">
-            <button class="font-bold">INGRESOS</button>
-            <button class="font-bold">GASTOS</button>
-            <button class="font-bold">COMPROBANTES</button>
+        <nav class="hidden lg:inline-flex flex w-5/12 pr-8 h-full justify-between items-center">
+            <a href="./ingresos.html" class="h-full">
+                <button class="font-bold h-full">INGRESOS</button>
+            </a>
+            <a href="./gastos.html" class="h-full">
+                <button class="font-bold h-full">GASTOS</button>
+            </a>
+            <a href="./comprobantes.html" class="h-full">
+                <button class="font-bold h-full">COMPROBANTES</button>
+            </a>
             <button><i class="fas fa-ellipsis-v"></i></button>
         </nav>  
         <button class="px-4 lg:hidden"><i class="fas fa-ellipsis-v"></i></button>
@@ -60,22 +78,34 @@
     <nav id="NavDesk" class="hidden lg:flex text-center justify-center w-1/6">
         <ul class="w-full">
             <button class="flex justify-center w-full">
-                <img class="h-36" src="./Assets/pato amarillo sin fondo.png" alt="Logo pato amarillo">
+                <a href="./main.html">
+                    <img class="h-36" src="./Assets/pato_amarillo_sin_fondo.png" alt="Logo pato amarillo">
+                </a>
             </button>    
             <li class="NavOn shadow-md flex items-center justify-center font-bold text-base h-14 xl:text-xl">
-                <button class="w-full h-full font-bold">HOME</button>
+                <a href="./main.html" class="h-full w-full">    
+                    <button class="w-full h-full font-bold">HOME</button>
+                </a>
             </li>
             <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-                <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+                <a href="./ingresoFacturas.html" class="h-full w-full">
+                    <button class="font-bold w-full h-full">AGREGAR INGRESO</button>
+                </a>
             </li>
             <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-                <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+                <a href="./gastoFacturas.html" class="h-full w-full">
+                    <button class="font-bold w-full h-full">AGREGAR GASTO</button>
+                </a>
             </li>
             <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-            <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+                <a href="./estimados.html" class="h-full w-full">
+                    <button class="font-bold w-full h-full">CALCULAR ESTIMADO</button>
+                </a>    
             </li>
             <li class="NavOff flex items-center justify-center text-base h-14 xl:text-xl">
-            <button class="font-bold w-full h-full">PROYECCIONES</button>
+                <a href="./proyeccion.html" class="h-full w-full">
+                    <button class="font-bold w-full h-full">PROYECCIONES</button>
+                </a>    
             </li>
         </ul>
     </nav>
@@ -93,9 +123,9 @@
             <p class="coloraz flex justify-between font-bold">DGI <span class="coloram">15/07</span></p>
             <p class="coloraz flex justify-between font-bold">FONASA <span class="colorvio">25/07</span></p>
         </div>
-        <div class="w-full  flex justify-center my-4">                    
-            <button class="BEstimado font-bold w-10/12 h-10 rounded-lg">CALCULAR ESTIMADO</button>
-        </div>
+        <a href="./estimados.html" class="w-10/12 h-10 mx-auto flex justify-center my-4">                
+            <button class="BEstimado w-full h-full font-bold rounded-lg">CALCULAR ESTIMADO</button>
+        </a>
     </div>
         <!-- Ingresos -->
         <!-- ARREGLAR BORDER RADIUS Y OVERFLOW (SCROLL) --> 
@@ -151,9 +181,9 @@
             </tbody>
         </table>
     <!-- Boton Agregar Ingreso -->
-    <div id="BAgregarIngreso" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
+    <a href="./ingresoFacturas.html" id="BAgregarIngreso" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
         <button class="BBAgregar font-bold h-3/5 w-full rounded-lg"><i class="fas fa-plus-circle"></i> AGREGAR INGRESO</button>
-    </div>
+    </a>
         <!-- Titulo Gastos -->
         <div class="coloraz flex justify-between items-end w-10/12 font-bold text-xl xl:text-2xl">
             <h2>Gastos</h2>
@@ -207,18 +237,18 @@
             </tbody>
         </table>
         <!-- Boton Agregar Gasto -->
-        <div id="BAgregarGasto" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
+        <a href="./gastoFacturas.html" id="BAgregarGasto" class="flex justify-center items-center h-20 w-8/12 xl:w-1/2">
             <button class="BBAgregar w-full h-3/5 font-bold rounded-lg"><i class="fas fa-plus-circle"></i> AGREGAR GASTO</button>
-        </div>
+        </a>
     </main>
         <!-- Boton Calcular Estimado -->
-    <aside class="hidden lg:flex flex-wrap flex-col w-2/6 items-center">
-            <div id="BCalcularEstimado" class="hidden lg:flex justify-center items-center my-8 h-16 w-2/3">
-                <button class="BEstimado w-full h-full rounded-lg font-bold">CALCULAR ESTIMADO</button>
-            </div>
+    <aside class="hidden lg:flex flex-col w-2/6 items-center">
+        <a href="./estimados.html"  id="BCalcularEstimado" class="hidden lg:flex justify-center items-center mt-8 h-16 w-2/3">
+            <button class="BEstimado w-full h-full rounded-lg font-bold">CALCULAR ESTIMADO</button>
+        </a>
             <!-- Calendario -->
             <!-- Titulos del Calendario -->
-            <div id="Calendario" class="hidden lg:flex h-2/5 w-4/5 justify-center flex-wrap shadow-xl mb-8">
+            <div id="Calendario" class="hidden lg:flex h-2/5 w-4/5 mt-16 justify-center flex-wrap shadow-xl mb-8">
                 <h1 class="coloraz text-lg text-center font-bold xl:text-2xl">
                     Calendario de Vencimientos
                 </h1>
@@ -286,4 +316,6 @@
             </div>
     </aside>
 </div>
+
 </body>
+</html>
